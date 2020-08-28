@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "doc/integratingSwiftuiWithUikit.md",
+            "file": "daily/2020-08-28.md",
             "mode": "source"
           }
         }
@@ -73,7 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "doc/integratingSwiftuiWithUikit.md"
+                "file": "daily/2020-08-28.md"
               }
             }
           }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "doc/integratingSwiftuiWithUikit.md"
+                "file": "daily/2020-08-28.md"
               }
             }
           }
@@ -109,10 +109,10 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "daily/2020-08-28.md",
+    "inbox.md",
     "doc/integratingSwiftuiWithUikit.md",
     "daily/2020-08-26.md",
-    "inbox.md",
-    "doc/thecomposablearchitecturepart2.md",
-    "doc/Untitled.md"
+    "doc/thecomposablearchitecturepart2.md"
   ]
 }
