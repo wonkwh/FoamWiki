@@ -10,18 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2020-08-28.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "b4de4bdedf5023e9",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/2020-08-26.md",
+            "file": "daily/2020-08-29.md",
             "mode": "source"
           }
         }
@@ -73,7 +62,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2020-08-28.md"
+                "file": "daily/2020-08-29.md"
               }
             }
           }
@@ -97,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2020-08-28.md"
+                "file": "daily/2020-08-29.md"
               }
             }
           }
@@ -109,10 +98,10 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "daily/2020-08-29.md",
     "daily/2020-08-28.md",
-    "inbox.md",
-    "doc/integratingSwiftuiWithUikit.md",
     "daily/2020-08-26.md",
-    "doc/thecomposablearchitecturepart2.md"
+    "inbox.md",
+    "doc/integratingSwiftuiWithUikit.md"
   ]
 }
