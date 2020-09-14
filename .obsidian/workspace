@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2020-09-14.md",
+            "file": "doc/SwiftNetworkLayerPart1.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2020-09-14.md"
+                "file": "doc/SwiftNetworkLayerPart1.md"
               }
             }
           }
@@ -88,7 +88,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2020-09-14.md"
+                "file": "doc/SwiftNetworkLayerPart1.md"
               }
             }
           }
@@ -99,8 +99,8 @@
     "width": 300
   },
   "lastOpenFiles": [
-    "daily/2020-09-14.md",
     "doc/SwiftNetworkLayerPart1.md",
+    "daily/2020-09-14.md",
     "daily/2020-09-05.md",
     "daily/2020-09-11.md",
     "doc/Untitled.md"
