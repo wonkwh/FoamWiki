@@ -13,5 +13,6 @@
     "starred": true,
     "outline": true,
     "daily-notes": true
-  }
+  },
+  "useMarkdownLinks": true
 }
