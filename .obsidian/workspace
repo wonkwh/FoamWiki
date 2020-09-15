@@ -10,11 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
             "file": "SwiftUIResource.md",
-=======
-            "file": "doc/SwiftNetworkLayerPart1.md",
->>>>>>> f1d0c65abfd069da6f7c111658d941bbc0ffec06
             "mode": "source"
           }
         }
@@ -68,11 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
                 "file": "SwiftUIResource.md"
-=======
-                "file": "doc/SwiftNetworkLayerPart1.md"
->>>>>>> f1d0c65abfd069da6f7c111658d941bbc0ffec06
               }
             }
           }
@@ -80,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5
+    "width": 286.5
   },
   "right": {
     "id": "9e6ff84cf08a3998",
@@ -96,11 +88,7 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
                 "file": "SwiftUIResource.md"
-=======
-                "file": "doc/SwiftNetworkLayerPart1.md"
->>>>>>> f1d0c65abfd069da6f7c111658d941bbc0ffec06
               }
             }
           }
@@ -108,21 +96,14 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "lastOpenFiles": [
-<<<<<<< HEAD
     "SwiftUIResource.md",
-    "inbox.md",
-    "SwiftUILink.md",
     "daily/2020-09-11.md",
-    "daily/2020-09-05.md"
-=======
-    "doc/SwiftNetworkLayerPart1.md",
-    "daily/2020-09-14.md",
-    "daily/2020-09-05.md",
-    "daily/2020-09-11.md",
-    "doc/Untitled.md"
->>>>>>> f1d0c65abfd069da6f7c111658d941bbc0ffec06
+    "todo.md",
+    "thecomposablearchitecturepart2.md",
+    "inbox.md"
   ]
 }
