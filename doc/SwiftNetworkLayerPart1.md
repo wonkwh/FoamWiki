@@ -1,7 +1,10 @@
 # Swift Network Layer, Part 1: Designing The API
 - [Link](https://blog.malcolmk.com/swift-network-layer-part-1-designing-the-api-ckewm4w9p002dggs1hqfm03lm)
 
-
+## Part 0
+ - [Part0](https://blog.malcolmk.com/swift-network-layer-series-ckecgql5s00ko9as121oy6hdu)
+  ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1598513873066/8kVP01zev.png?auto=format&q=60)
+  
 ## API Design
 ```swift
 	let client = Client<ITunesApiRoute>()

@@ -8,6 +8,13 @@
     "backlink": true,
     "command-palette": true,
     "markdown-importer": true,
-    "word-count": true
+    "word-count": true,
+    "custom-css": true,
+    "tag-pane": true,
+    "page-preview": true,
+    "starred": true,
+    "daily-notes": true,
+    "outline": true,
+    "templates": true
   }
 }

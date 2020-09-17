@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2020-09-15.md",
+            "file": "daily/2020-09-17.md",
             "mode": "source"
           }
         }
@@ -40,8 +40,16 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#swiftui"
+                "query": "tag:#facebookSdk"
               }
+            }
+          },
+          {
+            "id": "e28dc407617bd766",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
             }
           }
         ]
@@ -64,7 +72,25 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2020-09-15.md"
+                "file": "daily/2020-09-17.md"
+              }
+            }
+          },
+          {
+            "id": "28f70e3d7fda9735",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          },
+          {
+            "id": "e17f63ff29d605e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "daily/2020-09-17.md"
               }
             }
           }
@@ -76,7 +102,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "daily/2020-09-15.md",
-    "SwiftUIResource.md"
+    "daily/2020-09-17.md",
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
+    "inbox.md",
+    "doc/Untitled.md",
+    "doc/integratingSwiftuiWithUikit.md",
+    "doc/SwiftNetworkLayerPart1.md",
+    "daily/2020-08-29.md",
+    "daily/2020-09-16.md",
+    "doc/thecomposablearchitecturepart2.md",
+    "thecomposablearchitecturepart2.md"
   ]
 }
