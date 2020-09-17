@@ -28,6 +28,10 @@
 - https://github.com/niochat/nio
 
 ### complete app
+- https://developer.apple.com/documentation/app_clips/fruta_building_a_feature-rich_app_with_swiftui
+	- 애플 공식 샘플 앱
+	- https://steipete.com/posts/state-of-swiftui/
+		- 아직 error 가 많고 느리다는...
 - https://github.com/mythxn/DesignCode-SwiftUI
 - https://github.com/alfianlosari/CoronaVirusTrackerSwiftUI
 - https://github.com/bpisano/Weather

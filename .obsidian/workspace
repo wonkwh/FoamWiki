@@ -72,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5
+    "width": 231.5
   },
   "right": {
     "id": "9e6ff84cf08a3998",
@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 218.5
   },
   "lastOpenFiles": [
     "SwiftUIResource.md",
