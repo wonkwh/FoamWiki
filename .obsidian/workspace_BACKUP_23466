@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "4bfc9e10345595e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa0764bb156caf5b",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+<<<<<<< Updated upstream
+            "file": "SwiftUIResource.md",
+=======
+            "file": "daily/2020-09-15.md",
+>>>>>>> Stashed changes
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ca17eecc8171d714",
+    "type": "split",
+    "children": [
+      {
+        "id": "448affa467a345f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffcf7e3110ff6db9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1b20c3c8d6721ecb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          },
+          {
+            "id": "845b854705c27155",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "c8e3ec423f3fdbcf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54edd3eaf8ff5289",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+<<<<<<< Updated upstream
+                "file": "SwiftUIResource.md"
+=======
+                "file": "daily/2020-09-15.md"
+>>>>>>> Stashed changes
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 286.5
+  },
+  "right": {
+    "id": "9e6ff84cf08a3998",
+    "type": "split",
+    "children": [
+      {
+        "id": "995801cbe92fa1c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b49122f8c39ec71",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+<<<<<<< Updated upstream
+                "file": "SwiftUIResource.md"
+=======
+                "file": "daily/2020-09-15.md"
+>>>>>>> Stashed changes
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+<<<<<<< Updated upstream
+    "SwiftUIResource.md",
+    "daily/2020-09-11.md",
+    "todo.md",
+    "thecomposablearchitecturepart2.md",
+    "inbox.md"
+=======
+    "daily/2020-09-15.md",
+    "daily/2020-09-14.md",
+    "daily/2020-09-11.md",
+    "daily/2020-09-05.md",
+    "daily/2020-08-29.md"
+>>>>>>> Stashed changes
+  ]
+}

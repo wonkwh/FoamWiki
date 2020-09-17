@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "81dd2b48ea5b7192",
+    "id": "4bfc9e10345595e0",
     "type": "split",
     "children": [
       {
-        "id": "8f69118c52b72b18",
+        "id": "0492302049f044a9",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2020-09-17.md",
+            "file": "doc/SwiftNetworkLayerPart1.md",
             "mode": "source"
           }
         }
@@ -19,15 +19,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3ac4945c03907b43",
+    "id": "ca17eecc8171d714",
     "type": "split",
     "children": [
       {
-        "id": "fa85b2c6688b4f5a",
+        "id": "448affa467a345f1",
         "type": "tabs",
         "children": [
           {
-            "id": "8bbebf5e5d3d7c30",
+            "id": "ffcf7e3110ff6db9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,21 +35,61 @@
             }
           },
           {
-            "id": "865dbb15dbb5117a",
+            "id": "1b20c3c8d6721ecb",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#facebookSdk"
+                "query": ""
               }
             }
           },
           {
-            "id": "e28dc407617bd766",
+            "id": "845b854705c27155",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "c8e3ec423f3fdbcf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54edd3eaf8ff5289",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "doc/SwiftNetworkLayerPart1.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 334.5
+  },
+  "right": {
+    "id": "9e6ff84cf08a3998",
+    "type": "split",
+    "children": [
+      {
+        "id": "995801cbe92fa1c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b49122f8c39ec71",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "doc/SwiftNetworkLayerPart1.md"
+              }
             }
           }
         ]
@@ -58,59 +98,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "right": {
-    "id": "6949d09f8bd60c04",
-    "type": "split",
-    "children": [
-      {
-        "id": "0a823dbc79aac508",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6c86a86f0da230dc",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "daily/2020-09-17.md"
-              }
-            }
-          },
-          {
-            "id": "28f70e3d7fda9735",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {}
-            }
-          },
-          {
-            "id": "e17f63ff29d605e5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "daily/2020-09-17.md"
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
-  },
   "lastOpenFiles": [
-    "daily/2020-09-17.md",
-    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
-    "inbox.md",
-    "doc/Untitled.md",
-    "doc/integratingSwiftuiWithUikit.md",
     "doc/SwiftNetworkLayerPart1.md",
-    "daily/2020-08-29.md",
-    "daily/2020-09-16.md",
-    "doc/thecomposablearchitecturepart2.md",
-    "thecomposablearchitecturepart2.md"
+    "daily/2020-09-14.md",
+    "daily/2020-09-05.md",
+    "daily/2020-09-11.md",
+    "doc/Untitled.md"
   ]
 }

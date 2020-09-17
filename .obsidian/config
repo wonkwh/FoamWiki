@@ -10,13 +10,11 @@
     "markdown-importer": true,
     "word-count": true,
     "custom-css": true,
+    "tag-pane": true,
+    "page-preview": true,
     "starred": true,
+    "daily-notes": true,
     "outline": true,
-    "daily-notes": true
-  },
-<<<<<<< HEAD
-  "alwaysUpdateLinks": true
-=======
-  "useMarkdownLinks": true
->>>>>>> f1d0c65abfd069da6f7c111658d941bbc0ffec06
+    "templates": true
+  }
 }
