@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "SwiftUIResource.md",
-            "mode": "source"
+            "file": "doc/SwiftNetworkLayerPart1.md",
+            "mode": "preview"
           }
         }
       }
@@ -72,7 +72,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SwiftUIResource.md"
+                "file": "doc/SwiftNetworkLayerPart1.md"
               }
             }
           },
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SwiftUIResource.md"
+                "file": "doc/SwiftNetworkLayerPart1.md"
               }
             }
           }
@@ -98,19 +98,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
-    "SwiftUIResource.md",
+    "doc/SwiftNetworkLayerPart1.md",
     "doc/thecomposablearchitecturepart2.md",
+    "SwiftUIResource.md",
     "todo.md",
     "daily/2020-09-17.md",
     "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
     "doc/integratingSwiftuiWithUikit.md",
     "inbox.md",
     "doc/Untitled.md",
-    "doc/SwiftNetworkLayerPart1.md",
     "daily/2020-08-29.md"
   ]
 }
