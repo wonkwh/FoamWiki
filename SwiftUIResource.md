@@ -14,9 +14,12 @@
 ## List 관련
 - https://medium.com/better-programming/meet-greet-advanced-lists-in-swiftui-80ab6f08ca03
 	- empty, error, loading 
+- https://github.com/crelies/AdvancedList
 - https://medium.com/@axelhodler/creating-skeleton-loaders-in-swiftui-b8f00561281
 	- swiftui 에서 skeletonView 구현 
 	- https://github.com/CSolanaM/SkeletonUI
+- https://github.com/pietropizzi/GridStack
+	- 
 
 	
 ## OpenSource App
@@ -28,6 +31,12 @@
 - https://github.com/niochat/nio
 
 ### complete app
+- https://github.com/jpsim/Milestones
+	- #tca_archtecture 를 이용한  app
+- https://developer.apple.com/documentation/app_clips/fruta_building_a_feature-rich_app_with_swiftui
+	- 애플 공식 샘플 앱
+	- https://steipete.com/posts/state-of-swiftui/
+		- 아직 error 가 많고 느리다는...
 - https://github.com/mythxn/DesignCode-SwiftUI
 - https://github.com/alfianlosari/CoronaVirusTrackerSwiftUI
 - https://github.com/bpisano/Weather
@@ -41,6 +50,9 @@
 - https://github.com/Dimillian/RedditOS
 - https://github.com/sindresorhus/KeyboardShortcuts
 - https://github.com/jordansinger/messages-multiplatform-swiftui-sample
+- https://github.com/jordansinger/rdio-macos-swiftui-sample
+- https://github.com/jordansinger/slack-macos-swiftui-sample
+
 ### status bar
 - https://github.com/gao-sun/eul
 

@@ -6,4 +6,4 @@
 
 ## Adding todos
 ----
-tags : #swiftui, #tca, #architecture, #pointfree
+tags : #swiftui, #tca, #architecture, #pointfree, #tca_archtecture
