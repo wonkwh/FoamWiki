@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "doc/integratingSwiftuiWithUikit.md",
+            "file": "daily/2020-09-18.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#xcode"
+                "query": "tag:#obsidian"
               }
             }
           },
@@ -52,23 +52,8 @@
               "state": {}
             }
           }
-        ]
-      },
-      {
-        "id": "37542cf9235d0fa5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6c86a86f0da230dc",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "doc/integratingSwiftuiWithUikit.md"
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,21 +68,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e17f63ff29d605e5",
+            "id": "6c86a86f0da230dc",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "backlink",
               "state": {
-                "file": "doc/integratingSwiftuiWithUikit.md"
+                "file": "daily/2020-09-18.md"
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "47324c9c214f5619",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "28f70e3d7fda9735",
             "type": "leaf",
@@ -105,23 +84,34 @@
               "type": "tag",
               "state": {}
             }
+          },
+          {
+            "id": "e17f63ff29d605e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "daily/2020-09-18.md"
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "doc/integratingSwiftuiWithUikit.md",
+    "daily/2020-09-18.md",
+    "daily/2020-09-24.md",
+    "doc/SwiftNetworkLayerPart1.md",
+    "daily/2020-09-23.md",
+    "SwiftUIResource.md",
+    "doc/thecomposablearchitecturepart2.md",
     "todo.md",
-    "readme.md",
-    "daily/2020-09-28.md",
-    "daily/2020-09-25.md",
-    "daily/2020-09-22.md",
-    "daily/2020-09-21.md",
-    "daily/2020-09-16.md",
-    "daily/2020-08-29.md",
-    "daily/2020-09-17.md"
+    "daily/2020-09-17.md",
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
+    "doc/integratingSwiftuiWithUikit.md"
   ]
 }
