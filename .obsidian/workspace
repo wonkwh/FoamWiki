@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "doc/SwiftNetworkLayerPart1.md",
-            "mode": "preview"
+            "file": "doc/integratingSwiftuiWithUikit.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#facebookSdk"
+                "query": "tag:#xcode"
               }
             }
           },
@@ -50,6 +50,22 @@
             "state": {
               "type": "starred",
               "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "37542cf9235d0fa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c86a86f0da230dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "doc/integratingSwiftuiWithUikit.md"
+              }
             }
           }
         ]
@@ -67,31 +83,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c86a86f0da230dc",
+            "id": "e17f63ff29d605e5",
             "type": "leaf",
             "state": {
-              "type": "backlink",
+              "type": "outline",
               "state": {
-                "file": "doc/SwiftNetworkLayerPart1.md"
+                "file": "doc/integratingSwiftuiWithUikit.md"
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "47324c9c214f5619",
+        "type": "tabs",
+        "children": [
           {
             "id": "28f70e3d7fda9735",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {}
-            }
-          },
-          {
-            "id": "e17f63ff29d605e5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "doc/SwiftNetworkLayerPart1.md"
-              }
             }
           }
         ]
@@ -101,15 +113,15 @@
     "width": 300
   },
   "lastOpenFiles": [
-    "doc/SwiftNetworkLayerPart1.md",
-    "doc/thecomposablearchitecturepart2.md",
-    "SwiftUIResource.md",
-    "todo.md",
-    "daily/2020-09-17.md",
-    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
     "doc/integratingSwiftuiWithUikit.md",
-    "inbox.md",
-    "doc/Untitled.md",
-    "daily/2020-08-29.md"
+    "todo.md",
+    "readme.md",
+    "daily/2020-09-28.md",
+    "daily/2020-09-25.md",
+    "daily/2020-09-22.md",
+    "daily/2020-09-21.md",
+    "daily/2020-09-16.md",
+    "daily/2020-08-29.md",
+    "daily/2020-09-17.md"
   ]
 }
