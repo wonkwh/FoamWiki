@@ -15,6 +15,11 @@
     "starred": true,
     "daily-notes": true,
     "outline": true,
-    "templates": true
-  }
+    "templates": true,
+    "publish": false,
+    "workspaces": true
+  },
+  "foldIndent": true,
+  "foldHeading": true,
+  "defaultViewMode": "preview"
 }
