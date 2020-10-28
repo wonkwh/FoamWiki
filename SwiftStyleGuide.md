@@ -973,6 +973,7 @@ Where an Xcode project is involved, the organization should be set to `Vingle` a
 ## References
 
 * [The Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
+* [Swift Api Design Guidelines 한글](http://xho95.github.io/swift/language/grammar/revision/history/2020/10/08/API-Design-Guidelines.html)
 * [The Swift Programming Language](https://developer.apple.com/library/prerelease/ios/documentation/swift/conceptual/swift_programming_language/index.html)
 * [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html)
 * [Swift Standard Library Reference](https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/SwiftStandardLibraryReference/index.html)

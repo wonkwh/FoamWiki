@@ -3,6 +3,7 @@
 - [[integratingSwiftuiWithUikit]]
 - [[SwiftUIResource]]
 - [[SwiftUICleanCodingWithCustomViewModifiers]]
+- [[SwiftUI Form Tutorial]]
 - [[SwiftStyleGuide]]
 - [[SwiftNamingGuide]]
 

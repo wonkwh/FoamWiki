@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "SwiftNamingGuide.md",
+            "file": "SwiftUI Form Tutorial.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#designSystem"
+                "query": "tag:#swiftui"
               }
             }
           },
@@ -52,8 +52,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "439623c743d324ba",
@@ -80,7 +79,7 @@
       {
         "id": "d13c470fa86cf43c",
         "type": "tabs",
-        "dimension": 23.52941176470588,
+        "dimension": 23.529411764705877,
         "children": [
           {
             "id": "6c86a86f0da230dc",
@@ -88,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SwiftNamingGuide.md"
+                "file": "SwiftUI Form Tutorial.md"
               }
             }
           }
@@ -105,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SwiftNamingGuide.md"
+                "file": "SwiftUI Form Tutorial.md"
               }
             }
           }
@@ -116,15 +115,15 @@
     "width": 399
   },
   "lastOpenFiles": [
-    "SwiftNamingGuide.md",
+    "SwiftUI Form Tutorial.md",
     "inbox.md",
-    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
-    "SwiftStyleGuide.md",
-    "doc/thecomposablearchitecturepart2.md",
+    "SwiftUIResource.md",
+    "daily/2020-10-23.md",
+    "daily/2020-10-18.md",
     "daily/2020-09-05.md",
-    "todo.md",
     "daily/2020-09-28.md",
-    "daily/2020-09-17.md",
-    "daily/2020-09-16.md"
+    "doc/integratingSwiftuiWithUikit.md",
+    "Zettelkasten.md",
+    "daily/2020-10-28.md"
   ]
 }
