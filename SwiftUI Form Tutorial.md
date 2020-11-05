@@ -417,7 +417,9 @@ Lastly we need to change the background color of the VStack. To do that, add the
 
 This will stop there being a white rectangle showing up just above the keyboard.
 
-
+## 추가 링크
+- [SwiftUI Build a Form from scratch](https://www.youtube.com/watch?v=jrAA9Gt-jqw)
+- [Building forms with SwiftUI](https://swiftwithmajid.com/2019/06/19/building-forms-with-swiftui/)
 
 ---
 - tags: #swiftui 

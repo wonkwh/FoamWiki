@@ -6,6 +6,7 @@
 - [[SwiftUI Form Tutorial]]
 - [[SwiftStyleGuide]]
 - [[SwiftNamingGuide]]
+- [[SwiftPlaygroundResource]]
 
 
 ## architecture

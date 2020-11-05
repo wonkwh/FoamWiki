@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "SwiftUI Form Tutorial.md",
+            "file": "SwiftPlaygroundResource.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#swiftui"
+                "query": "tag:#bestPractice"
               }
             }
           },
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289
+    "width": 311
   },
   "right": {
     "id": "6949d09f8bd60c04",
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SwiftUI Form Tutorial.md"
+                "file": "SwiftPlaygroundResource.md"
               }
             }
           }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SwiftUI Form Tutorial.md"
+                "file": "SwiftPlaygroundResource.md"
               }
             }
           }
@@ -115,15 +115,15 @@
     "width": 399
   },
   "lastOpenFiles": [
-    "SwiftUI Form Tutorial.md",
+    "SwiftPlaygroundResource.md",
     "inbox.md",
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
+    "readme.md",
+    "SwiftNamingGuide.md",
+    "SwiftStyleGuide.md",
+    "SwiftUI Form Tutorial.md",
     "SwiftUIResource.md",
-    "daily/2020-10-23.md",
-    "daily/2020-10-18.md",
-    "daily/2020-09-05.md",
-    "daily/2020-09-28.md",
-    "doc/integratingSwiftuiWithUikit.md",
-    "Zettelkasten.md",
-    "daily/2020-10-28.md"
+    "todo.md",
+    "Zettelkasten.md"
   ]
 }
