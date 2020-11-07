@@ -16,5 +16,6 @@
     "daily-notes": true,
     "outline": true,
     "templates": true
-  }
+  },
+  "enabledPlugins": []
 }

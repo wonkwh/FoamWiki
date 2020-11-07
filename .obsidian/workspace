@@ -10,6 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
+
+            "file": "daily/2020-11-07.md",
             "file": "daily/2020-10-20.md",
             "mode": "source"
           }
@@ -73,6 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "daily/2020-11-07.md"
                 "file": "daily/2020-10-20.md"
               }
             }
@@ -91,6 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "daily/2020-11-07.md"
                 "file": "daily/2020-10-20.md"
               }
             }
@@ -103,15 +107,22 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "daily/2020-09-18.md",
+    "daily/2020-09-24.md",
+    "daily/2020-09-23.md",
     "daily/2020-10-20.md",
     "daily/2020-10-18.md",
+    "daily/2020-09-17.md",
+    "daily/2020-09-21.md"
     "daily/2020-09-25.md",
     "daily/2020-09-28.md",
     "daily/2020-08-26.md",
+    "daily/2020-11-07.md",
     "SwiftUIResource.md",
     "readme.md",
     "todo.md",
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md"
     "doc/SwiftNetworkLayerPart1.md",
-    "daily/2020-09-21.md"
+    "doc/SwiftNetworkLayerPart1.md",
   ]
 }
