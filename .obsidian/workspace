@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "8f69118c52b72b18",
+        "id": "892e465bf2f20797",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-
+            "file": "SwiftPlaygroundResource.md",
             "file": "daily/2020-11-07.md",
             "file": "daily/2020-10-20.md",
             "mode": "source"
@@ -42,7 +42,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ""
+                "query": "tag:#bestPractice"
               }
             }
           },
@@ -54,32 +54,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300
-  },
-  "right": {
-    "id": "6949d09f8bd60c04",
-    "type": "split",
-    "children": [
+        ]
+      },
       {
-        "id": "0a823dbc79aac508",
+        "id": "439623c743d324ba",
         "type": "tabs",
         "children": [
-          {
-            "id": "6c86a86f0da230dc",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "daily/2020-11-07.md"
-                "file": "daily/2020-10-20.md"
-              }
-            }
-          },
           {
             "id": "28f70e3d7fda9735",
             "type": "leaf",
@@ -87,13 +67,48 @@
               "type": "tag",
               "state": {}
             }
-          },
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 311
+  },
+  "right": {
+    "id": "6949d09f8bd60c04",
+    "type": "split",
+    "children": [
+      {
+        "id": "d13c470fa86cf43c",
+        "type": "tabs",
+        "dimension": 23.529411764705877,
+        "children": [
+          {
+            "id": "6c86a86f0da230dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SwiftPlaygroundResource.md"
+                "file": "daily/2020-11-07.md"
+                "file": "daily/2020-10-20.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0a823dbc79aac508",
+        "type": "tabs",
+        "dimension": 76.47058823529412,
+        "children": [
           {
             "id": "e17f63ff29d605e5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "SwiftPlaygroundResource.md"
                 "file": "daily/2020-11-07.md"
                 "file": "daily/2020-10-20.md"
               }
@@ -103,10 +118,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 399
   },
   "lastOpenFiles": [
+    "SwiftPlaygroundResource.md",
+    "inbox.md",
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
     "daily/2020-09-18.md",
     "daily/2020-09-24.md",
     "daily/2020-09-23.md",
@@ -120,7 +137,12 @@
     "daily/2020-11-07.md",
     "SwiftUIResource.md",
     "readme.md",
+    "SwiftNamingGuide.md",
+    "SwiftStyleGuide.md",
+    "SwiftUI Form Tutorial.md",
+    "SwiftUIResource.md",
     "todo.md",
+    "Zettelkasten.md"
     "doc/SwiftUICleanCodingWithCustomViewModifiers.md"
     "doc/SwiftNetworkLayerPart1.md",
     "doc/SwiftNetworkLayerPart1.md",
