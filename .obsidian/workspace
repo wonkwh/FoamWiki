@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2020-09-18.md",
+            "file": "daily/2020-11-07.md",
             "mode": "source"
           }
         }
@@ -73,7 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2020-09-18.md"
+                "file": "daily/2020-11-07.md"
               }
             }
           },
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2020-09-18.md"
+                "file": "daily/2020-11-07.md"
               }
             }
           }
@@ -103,6 +103,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "daily/2020-11-07.md",
     "daily/2020-09-18.md",
     "daily/2020-09-24.md",
     "doc/SwiftNetworkLayerPart1.md",
@@ -111,7 +112,6 @@
     "doc/thecomposablearchitecturepart2.md",
     "todo.md",
     "daily/2020-09-17.md",
-    "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
-    "doc/integratingSwiftuiWithUikit.md"
+    "doc/SwiftUICleanCodingWithCustomViewModifiers.md"
   ]
 }
