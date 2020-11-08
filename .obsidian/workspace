@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "SwiftPlaygroundResource.md",
+            "file": "daily/2020-11-08.md",
             "mode": "source"
           }
         }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SwiftPlaygroundResource.md"
+                "file": "daily/2020-11-08.md"
               }
             }
           }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SwiftPlaygroundResource.md"
+                "file": "daily/2020-11-08.md"
               }
             }
           }
@@ -115,15 +115,15 @@
     "width": 399
   },
   "lastOpenFiles": [
-    "SwiftPlaygroundResource.md",
+    "daily/2020-11-08.md",
+    "daily/2020-11-02.md",
+    "doc/SwiftNetworkLayerPart1.md",
+    "ParserCombinator.md",
     "inbox.md",
+    "SwiftPlaygroundResource.md",
     "doc/SwiftUICleanCodingWithCustomViewModifiers.md",
     "readme.md",
     "SwiftNamingGuide.md",
-    "SwiftStyleGuide.md",
-    "SwiftUI Form Tutorial.md",
-    "SwiftUIResource.md",
-    "todo.md",
-    "Zettelkasten.md"
+    "SwiftStyleGuide.md"
   ]
 }
