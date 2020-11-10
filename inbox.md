@@ -8,8 +8,10 @@
 - [[SwiftNamingGuide]]
 - [[SwiftPlaygroundResource]]
 
+----
 # Functional 
 
+----
 # iOS Develop
 
 ## swift language
@@ -22,4 +24,5 @@
 ##
 ## architecture
 - The Composal Archtecture
+	- [[SwiftComposalArchitectureResource]]
 	- [[thecomposablearchitecturepart2]]
