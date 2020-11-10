@@ -19,7 +19,8 @@
 	- swiftui 에서 skeletonView 구현 
 	- https://github.com/CSolanaM/SkeletonUI
 - https://github.com/pietropizzi/GridStack
-	- 
+- [how-to-fix-slow-list-updates-in-swiftui](https://www.hackingwithswift.com/articles/210/how-to-fix-slow-list-updates-in-swiftui)
+
 
 	
 ## OpenSource App

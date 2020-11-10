@@ -1,4 +1,22 @@
 # Swift Network Layer, Part 1: Designing The API
+## Content
+- [[#Swift Network Layer, Part 1: Designing The API]]
+	- [[#Part 0]]
+	- [[#API Design]]
+	- [[#Code]]
+		- [[#Folder Structure]]
+		- [[#Model]]
+		- [[#Client]]
+		- [[#RouteProvider]]
+			- [[#PlaceHolderRoute]]
+		- [[#HTTPMethod]]
+		- [[#HTTPContentType]]
+		- [[#HTTPError]]
+		- [[#Encodable Dictionary]]
+	- [[#Resource]]
+
+[[#Content]]
+
 - [Link](https://blog.malcolmk.com/swift-network-layer-part-1-designing-the-api-ckewm4w9p002dggs1hqfm03lm)
 
 ## Part 0
