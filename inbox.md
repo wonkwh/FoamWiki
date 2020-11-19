@@ -9,8 +9,10 @@
 - [[SwiftPlaygroundResource]]
 	- [[HowToUseSwiftUIinSwiftPlaygrounds]]
 
+----
 # Functional 
 -  [[PointfreeTutorial]] 
+
 # iOS Develop
 
 ## swift language
@@ -26,4 +28,5 @@
 
 ## architecture
 - The Composal Archtecture
+	- [[SwiftComposalArchitectureResource]]
 	- [[thecomposablearchitecturepart2]]
