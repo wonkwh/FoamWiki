@@ -8,7 +8,13 @@
 2. [번역](https://pilgwon.github.io/post/episode-2-side-effects)
 
 
-
+## parser collection
+### 56. What Is a Parser?: Part 1
+- [[WhatIsaParser_Part1]]
+### 57. What Is a Parser?: Part 2
+- [[WhatIsaParser_Part2]]
+### 58. What Is a Parser?: Part 3
+- [[WhatIsaParser_Part3]]
 ----
 - tags: #tca_archtecture , #pointfree , #functional
 
