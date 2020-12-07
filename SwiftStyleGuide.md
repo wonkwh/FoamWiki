@@ -5,53 +5,6 @@
  - swiftlint, swiftformat으로 최대한 warning, error, 혹은 auto formatting 되도록 처리한다.
    - 해당항목에 lint, formatting rule을 명시한다. 
 
-
-## Table of Contents
-
-- [Swift Style Guide.](#swift-style-guide)
-    - [Updated for Swift 5.1](#updated-for-swift-51)
-  - [Table of Contents](#table-of-contents)
-  - [Correctness](#correctness)
-  - [Code Organization](#code-organization)
-    - [Protocol Conformance](#protocol-conformance)
-    - [Unused Code](#unused-code)
-    - [Minimal Imports](#minimal-imports)
-  - [Spacing](#spacing)
-  - [Comments](#comments)
-  - [Classes and Structures](#classes-and-structures)
-    - [어떤 것을 사용해야 하나?](#%ec%96%b4%eb%96%a4-%ea%b2%83%ec%9d%84-%ec%82%ac%ec%9a%a9%ed%95%b4%ec%95%bc-%ed%95%98%eb%82%98)
-    - [Example definition](#example-definition)
-    - [Use of Self](#use-of-self)
-    - [Computed Properties](#computed-properties)
-    - [Final](#final)
-  - [Function Declarations](#function-declarations)
-  - [Function Calls](#function-calls)
-  - [Closure Expressions](#closure-expressions)
-  - [Types](#types)
-    - [Constants](#constants)
-    - [Static Methods and Variable Type Properties](#static-methods-and-variable-type-properties)
-    - [Optionals](#optionals)
-    - [Lazy Initialization](#lazy-initialization)
-    - [Type Inference](#type-inference)
-      - [Type Annotation for Empty Arrays and Dictionaries](#type-annotation-for-empty-arrays-and-dictionaries)
-    - [Syntactic Sugar](#syntactic-sugar)
-  - [Functions vs Methods](#functions-vs-methods)
-  - [Memory Management](#memory-management)
-    - [Extending object lifetime](#extending-object-lifetime)
-  - [Access Control](#access-control)
-  - [Control Flow](#control-flow)
-    - [Ternary Operator](#ternary-operator)
-  - [Golden Path](#golden-path)
-    - [Failing Guards](#failing-guards)
-  - [Semicolons](#semicolons)
-  - [Parentheses](#parentheses)
-  - [Multi-line String Literals](#multi-line-string-literals)
-  - [No Emoji](#no-emoji)
-  - [Organization and Bundle Identifier](#organization-and-bundle-identifier)
-  - [Copyright Statement](#copyright-statement)
-  - [References](#references)
-
-
 ## Correctness
 - 반드시 경고(warnings)없이 컴파일되도록 한다. 
 - 이 규칙은 문자열 원문(literals) 대신 `#selector`타입을 사용하는 것과 같이 많은 스타일을 결정하는 것을 제공한다.
@@ -101,10 +54,7 @@ Since the compiler does not allow you to re-declare protocol conformance in a de
 For UIKit view controllers, consider grouping lifecycle, custom accessors, and IBAction in separate class extensions.
 
 ### Unused Code
-
-Unused (dead) code, including Xcode template code and placeholder comments should be removed. An exception is when your tutorial or book instructs the user to use the commented code.
-
-Aspirational methods not directly associated with the tutorial whose implementation simply calls the superclass should also be removed. This includes any empty/unused UIApplicationDelegate methods.
+- 사용하지 않는 xcode template code 나 코멘트들은 제거한다.
 
 **Preferred**:
 ```swift
@@ -136,20 +86,20 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
 Import only the modules a source file requires. For example, don't import `UIKit` when importing `Foundation` will suffice. Likewise, don't import `Foundation` if you must import `UIKit`.
 
 **Preferred**:
-```
+```swift
 import UIKit
 var view: UIView
 var deviceModels: [String]
 ```
 
 **Preferred**:
-```
+```swift
 import Foundation
 var deviceModels: [String]
 ```
 
 **Not Preferred**:
-```
+```swift
 import UIKit
 import Foundation
 var view: UIView
@@ -157,7 +107,7 @@ var deviceModels: [String]
 ```
 
 **Not Preferred**:
-```
+```swift
 import UIKit
 var deviceModels: [String]
 ```
@@ -323,7 +273,7 @@ var diameter: Double {
 ### Final
 
 - 클래스나 멤버를 `final`로 표시하는 것은 핵심 주제를 혼란시킬수 있고 필요하지도 않다. 
-- 그렇지만, `final`의 사용은 가끔씩 의도를 명확하게 해주고 비용의 가치가 있다. 
+- 그렇지만, `final`의 사용은 가끔씩 의도를 명확하게 해준다. 
 - 아래 예제에서, `Box`는 특별한 목적을 가지고 파생된 클래스의 사용자 정의는 의도되지 않는다. final로 표시하면 분명해진다.
 
 ```swift
@@ -979,4 +929,4 @@ Where an Xcode project is involved, the organization should be set to `Vingle` a
 * [Swift Standard Library Reference](https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/SwiftStandardLibraryReference/index.html)
 
 ----
-- tags: #codingConvention, #bestPractice
+- tags: #codingConvention, #bestPractice, #styleguide 
