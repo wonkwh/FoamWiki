@@ -15,6 +15,9 @@
 - [[WhatIsaParser_Part2]]
 ### 58. What Is a Parser?: Part 3
 - [[WhatIsaParser_Part3]]
+### 127. Parsing and Performance Strings
+- [[ParsingPerformanceStrings]]
+- 
 ----
 - tags: #tca_archtecture , #pointfree , #functional
 
