@@ -16,6 +16,8 @@
 # iOS Develop
 
 ## swift language
+- [Swift 5.3: Swift Programming Language](http://xho95.github.io/swift/programming/language/grammar/2017/02/28/The-Swift-Programming-Language.html?fbclid=IwAR1npQs4_mz15eHOsDTM7lJq_pH6MijLmW_5vnn6RVqWCig6vy_qrzENoLU)
+	- 공식문서의 번역문서. 항상 참조하자... 
 ## uikit
 ### UITableView 
  - [[EnumDrivenTableViewDevelopment]]
@@ -38,6 +40,8 @@
 - 
 	
 # tools
+## shell
+- [[zshLikeFish]]
 ## CI/CD Service
 ## Git 
 - [[GitCommitRules]]

@@ -51,7 +51,8 @@
 - https://github.com/AlexeyVoronov96/NewsApp-With-SwiftUI-And-Combine
 - https://github.com/xiaoyouxinqing/PostDemo
 	- https://www.youtube.com/watch?v=l1tnQd_JScA&list=UUeeTPGAM-JVhKXiS1KjqvvQ
-
+- https://github.com/dheerajghub/Instagram-Clone-in-SwiftUI
+- 
 
 ## Mac
 - https://github.com/Dimillian/RedditOS
@@ -67,6 +68,10 @@
 ## Control, View
 - https://github.com/benjaminsage/iPages
 	- Quickly implement swipable page views 
+- https://github.com/AppPear/ChartView #chart 
+	- Chart
+- https://github.com/mecid/SwiftUICharts #chart 
+
 
 ### sheet, drawer
 - https://github.com/nerdsupremacist/Snap
