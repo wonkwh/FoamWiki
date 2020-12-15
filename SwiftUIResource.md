@@ -1,5 +1,5 @@
 # SwiftUI resource
-- https://github.com/WillieWangWei/SwiftUI-Tutorials
+
 - https://github.com/LisaDziuba/Flawless-iOS
 	- swiftui뿐 아니라 다양한 article들이 category 별로
 - https://github.com/chinsyo/awesome-swiftui
@@ -10,7 +10,14 @@
 - https://github.com/fzhlee/SwiftUI-Guide
 	- simple tip, code snippet 모음 
 
-
+## tutorial 
+- Apple 공식 tutorial
+	- [Apple SwiftUI 1.0 tutorial](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views)
+		- https://github.com/WillieWangWei/SwiftUI-Tutorials
+		- 
+	- [새로운 Apple SwiftUI 2.0 tutorial](https://developer.apple.com/tutorials/app-dev-training)
+	- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/mac-catalyst)
+	
 ## designKit
 - https://github.com/playbook-ui/playbook-ios #designSystem 
 	- js의 storybook처럼 usecase 를 갤러리 앱을 만들수 있는 
