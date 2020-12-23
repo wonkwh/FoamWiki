@@ -1,5 +1,5 @@
 # SwiftUI resource
-
+- https://github.com/onmyway133/awesome-swiftui
 - https://github.com/LisaDziuba/Flawless-iOS
 	- swiftui뿐 아니라 다양한 article들이 category 별로
 - https://github.com/chinsyo/awesome-swiftui
@@ -17,6 +17,8 @@
 		- 
 	- [새로운 Apple SwiftUI 2.0 tutorial](https://developer.apple.com/tutorials/app-dev-training)
 	- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/mac-catalyst)
+- RayWenderlich Tutorial
+	- [your-first-ios-and-swiftui-app-an-app-from-scratch](https://www.raywenderlich.com/17493408-your-first-ios-and-swiftui-app-an-app-from-scratch)
 	
 ## designKit
 - https://github.com/playbook-ui/playbook-ios #designSystem 

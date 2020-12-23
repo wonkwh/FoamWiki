@@ -38,13 +38,17 @@
 ## Course
 - [[AppStoreClone]]
 - 
-	
+## Log
+- [[UsingOSLog]]
+
 # tools
 ## shell
 - [[zshLikeFish]]
+- [터미널 기반 글 작성 & 코딩 워크플로우](https://news.hada.io/topic?id=3357)
 ## CI/CD Service
 ## Git 
 - [[GitCommitRules]]
 ## xcode
 - [[doc/projectGenerationTool]] 
-- 
+
+## Emacs
