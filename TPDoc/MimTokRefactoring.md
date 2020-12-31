@@ -21,7 +21,11 @@
 	- critical 한 warning이 있는지 쉽게 파악이 안됨
 ### Localization
 - 현재 First Language로 중국어
-- `InfoPList.strings` filedml 
+- `InfoPList.strings` file 에 정의 
+- 현재 key 값도 중국어다! 
+	- key  는 모두 영어로 변경
+	- default language도 변경
+- https://poeditor.com 등의 사용도 고려해서 CI, CD 서비스와 통합
 ### Perfomance Issue
 - 현재 video List scrolling issue 원인을 파악해보면 
 	- ios 10에서 부터 지원하는 list prefeching 기술을 이용하지 않음 
@@ -53,6 +57,13 @@
 	- 그외 `camelCase` file 명도 혼재되어 있다 
 	- 소스코드 이해및 유지보스를 위해 CodingConvention및 NamingConvention을 문서, Tool 을 통해 통일할 필요가 있다 
 		- SwiftLint, SwiftFormat tool 사용
+	- git branching 이 규칙이 없다. 
+		- 현재 `dev_master` 가 외주 개발사가 했던 branch 
+		- 대강의 히스토리는 파악할수 있으나 tag, release branch를 사용하지 않아 version 관리가 되고 있지 않다
+		- 현재 Git-flow 로 변경 
+			- 참조 - [우린 Git-flow를 사용하고 있어요](https://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html)
+		- issue, feature구현, pull request 등의 규칙이 필요
+
 
 ## 3rdParty Library
 - 제거해야할 중국관련 Library, Framework
@@ -101,9 +112,18 @@
 	- https://github.com/gdxz123/GDTiktokEffectSwift 
 	- https://github.com/wangrenzhu/MetalVideoProcess
 	- https://github.com/tumblr/kanvas-ios
+	- https://github.com/jaiobs/OptiVideoEditor-for-iOS
+	- https://github.com/vitoziv/VideoCat
+	- https://github.com/zzzmobile/VideoGraph
+	- https://github.com/BradLarson/GPUImage3
+	- https://github.com/MetalPetal/MetalPetal
+	- https://github.com/qyz777/QEditor
+	- 
 - AR 관련
 	- https://github.com/AFathi/ARVideoKit
 	- https://github.com/eventtus/photo-editor
+	- https://github.com/google/mediapipe
+		- https://github.com/mgyong/awesome-mediapipe
 - 상용 SDK들 비교
 	- https://medium.com/@davegord86/10-best-face-filter-sdks-compared-updated-2020-9ca536b7a0e7
 - Tutorial

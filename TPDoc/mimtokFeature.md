@@ -7,7 +7,7 @@
 - Login / Singup
 - Notification
 - Upload Video
-- Reations (Heart and Comment )
+- Reations (Like and Comment )
 - Share
 - Filter and Effect
 - Video Editing
@@ -20,8 +20,23 @@
 - Video preview before the registration
 - Location-based content
 - Real-time analytics
-	- This function provides an opportunity to see the live viewers and broadcasters on the graph. Additionally, it offers data about the number of comments and hearts.
 - Live video streaming
 - AR filters
-	- Some augmented reality filters can change the hair or eye color, add objects over the head (e.g. dog’s ears, flowers), and more. This technology becomes more and more popular these days. So, it’s a good idea to integrate this technology into your application. By the way, we’ve developed an amazing AR library. If you are curious, you can check our GitHub profile to study our
 
+
+## 개발 비용
+- 1 sprint 에 4p * 4  : 20p
+- QA, DevOps 등의 비용도 러프하게 포함
+
+| feature           | sprint | time cost |
+| ----------------- | ------ | --------- |
+| Login / Singup    | 1.5    | 30p       |
+| Profile           | 1.2    | 24p       |
+| Video Editing     | 3      | 60p       |
+| Upload Video      | 1      | 20p       |
+| Like and Comment  | 2      | 40p       |
+| Notification      | 0.8    | 15p       |
+| Share             | 0.2    | 5p        |
+| Filter and Effect | 6      | 120p      |
+| Chat              | 4      | 80p       |
+| total             | 19.7   |           |

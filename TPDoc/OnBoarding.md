@@ -28,3 +28,11 @@
 						- 보라 : 개발팀, 기획팀 질문, 요청
 						- 진파 : 다른팀의 요청을 디자인팀에서 확인했음
 						- 처음 질문한 사람(개발, 기획팀)이 해당 노트 resolve
+
+- 2020-12-31 #meeting 
+	- 도구 결정 
+		- slack, github, space 등등 
+	- 현재 하고 있는 일들
+		- ios : 
+	- 가장 최적화된 video quality 는 어느것인지 #todo 
+		- 30frame , width, height , bitrate
