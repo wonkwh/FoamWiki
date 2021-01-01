@@ -118,7 +118,9 @@
 	- https://github.com/BradLarson/GPUImage3
 	- https://github.com/MetalPetal/MetalPetal
 	- https://github.com/qyz777/QEditor
-	- 
+	- https://github.com/kxvn-lx/Kontax-Cam
+	- https://github.com/Video-io/VideoKitTikTokFeed
+		- video.io 라는 솔루션 sample app인데 상용인지 확실치 않음.
 - AR 관련
 	- https://github.com/AFathi/ARVideoKit
 	- https://github.com/eventtus/photo-editor
