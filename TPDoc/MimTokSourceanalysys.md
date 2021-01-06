@@ -22,6 +22,31 @@
 	- ijkPlayer는 ffmpeg의 ffplay를 기반으로한 멀티포맷, 멀티코덱을 andorid, ios 동시 대응하기 위해 만든것 
 	- mp4, h264만 지원하면 되면 구지 필요없는 over spec
 	- AVPlayer로 교체하면 Performance 향상과 많은 issue가 해결됨
+	- thumbnail image를 server에서 모두 받아와서 보여줌
+		- 다음과 같은 코드로 해결하자. 
+		```swift
+
+private func createVideoThumbnail(from url: URL) -> UIImage? {
+
+    let asset = AVAsset(url: url)
+    let assetImgGenerate = AVAssetImageGenerator(asset: asset)
+    assetImgGenerate.appliesPreferredTrackTransform = true
+    assetImgGenerate.maximumSize = CGSize(width: frame.width, height: frame.height)
+
+    let time = CMTimeMakeWithSeconds(0.0, preferredTimescale: 600)
+    do {
+        let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
+        let thumbnail = UIImage(cgImage: img)
+        return thumbnail
+    }
+    catch {
+      print(error.localizedDescription)
+      return nil
+    }
+
+}
+
+		```
 
 ## YBLiveOrVideo 
 - `RecordAndEditPlay`  folder에  `TCVideoRecordViewController` class

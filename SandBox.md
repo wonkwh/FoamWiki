@@ -55,3 +55,16 @@ Back tap 등록
 아무곳에서나 단말기의 뒷부분을 천천히 더블탭 혹은 트리플탭 하면 실행됩니다.
 ```
 앞으로 가끔 아이폰, 맥 유용한 팁들 있으면 공유드리겠습니다. ^^  그럼.. 
+
+- 기존 `open`, `inProgress`, `Done` 으로 되어 있던 board의 statuses를 `Open`, `InProgress`, `Finish`, `QA/DQA`, `Deliver` , `ReadyForRelease` 로 6개로 변경하였습니다. 
+	- open, inprogress 는 기존과 같습니다. 
+	- Finish는 개발자가 이슈를 수정하여 repository에 develop branch에 merge한 상태
+	- Deliver는 TestFlight등으로 내부배포가 완료된 상태 
+	- QA/DQA : 이슈를 만든 사람이 QA를 실시하여 완료되고 Design 검증이 필요하면 DQA 를 진행하는 상태 , 여기서 이슈가 수정이 완료되면 ReadyForRelease로 변경하고 이슈가 수정되지 않았거나 디자인이 변경되지 않았으면 reject하여 open상태로 만듭니다. 
+	- ReadyForRelease는 AppStore에 릴리즈할 사항들
+	
+
+
+
+
+----

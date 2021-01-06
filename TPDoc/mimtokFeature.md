@@ -40,3 +40,8 @@
 | Filter and Effect | 6      | 120p      |
 | Chat              | 4      | 80p       |
 | total             | 19.7   |           |
+
+- [[MimTokChecklist]]
+
+
+

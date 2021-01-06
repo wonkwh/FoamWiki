@@ -34,6 +34,15 @@
 	- Downloading Video While Streaming
 		- https://medium.com/@EugeneZZI/understanding-avassetresourceloaderdelegate-b90b3fe2c059
 	- - Memory Cache and Disk Cache 적용
+	- [[ObjectiveCToSwift]]
+- Memory Leak Detect Library 설치 
+	- https://github.com/krzysztofzablocki/LifetimeTracker
+	- https://github.com/didi/DoraemonKit/blob/master/README_EN.md
+		- http://xingyun.xiaojukeji.com/docs/dokit_en#/intro
+		- app에서 app언어를 영어로 바꾸면 중국어에서 영어로 바뀐다. 
+	
+
+
 - UserDefault(Local File)
 	- 너무나도 과도하게 데어터를 file로 저정하고 있다. 
 		- performance 저하 --> DB(CoreData, Sqllite, RealmDB) 로 migration 필요 
@@ -41,11 +50,11 @@
 		- Nuke, Kingsfisher 등의 image cache library를 사용하여 개선필요
 		- Thumbnail images의 scales down 을 pre-processor로 처리필요
 
-- Resource 가 모두 png파일로 폴더로 분산 
-	- `图片` 라는 이름의 폴더 --> 모두 `Resource` 폴더로 변경 완료
-	- 사용하지 않는 쓸모없는 리소스들이 다수있다 
-	- vector graphics file (pdf file) 로 모두 변경하고 asetLibrary 로 통합
-
+- [ ] Resource 가 모두 png파일로 폴더로 분산 
+	- [x] `图片` 라는 이름의 폴더 --> 모두 `Resource` 폴더로 변경 완료
+	- [x] 사용하지 않는 쓸모없는 리소스들이 다수있다 
+	- [x] vector graphics file (pdf file) 로 모두 변경하고 asetLibrary 로 통합
+- [[PreviewVideoScrollPerformanceRefactgoring]]
 ### DevOps
 - Crash debug Log 받아볼수 없음 
 	- `firebase crashlytics` service 추가 
@@ -60,10 +69,13 @@
 	- git branching 이 규칙이 없다. 
 		- 현재 `dev_master` 가 외주 개발사가 했던 branch 
 		- 대강의 히스토리는 파악할수 있으나 tag, release branch를 사용하지 않아 version 관리가 되고 있지 않다
-		- 현재 Git-flow 로 변경 
+		- [x] 현재 Git-flow 로 변경 
 			- 참조 - [우린 Git-flow를 사용하고 있어요](https://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html)
 		- issue, feature구현, pull request 등의 규칙이 필요
-
+	- source formatting 
+		- swift file은 swiftlint, swiftformat을 사용하면 되나. 
+		- #Objective-C 는 clang-format 사용하자 
+			- [[ObjectiveC-SourceFormatting]]
 
 ## 3rdParty Library
 - 제거해야할 중국관련 Library, Framework

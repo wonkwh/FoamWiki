@@ -36,3 +36,4 @@
 		- ios : 
 	- 가장 최적화된 video quality 는 어느것인지 #todo 
 		- 30frame , width, height , bitrate
+
