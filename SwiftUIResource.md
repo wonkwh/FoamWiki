@@ -61,6 +61,9 @@
 - https://github.com/xiaoyouxinqing/PostDemo
 	- https://www.youtube.com/watch?v=l1tnQd_JScA&list=UUeeTPGAM-JVhKXiS1KjqvvQ
 - https://github.com/dheerajghub/Instagram-Clone-in-SwiftUI
+- LBTA의 swiftUI cource app #LBTA 
+	- https://github.com/28cmm/TravelDiscovery 
+	- https://github.com/aymenafia/TravelDiscovery
 - 
 
 ## Mac

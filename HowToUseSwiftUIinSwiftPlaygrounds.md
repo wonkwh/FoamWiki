@@ -22,3 +22,5 @@ PlaygroundPage.current.setLiveView(ContentView())
 
 
 ```
+
+- tags: #swiftPlayground #swiftui 

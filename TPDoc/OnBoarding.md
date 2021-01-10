@@ -34,6 +34,4 @@
 		- slack, github, space 등등 
 	- 현재 하고 있는 일들
 		- ios : 
-	- 가장 최적화된 video quality 는 어느것인지 #todo 
-		- 30frame , width, height , bitrate
 

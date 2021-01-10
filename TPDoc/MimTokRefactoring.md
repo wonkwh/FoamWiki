@@ -111,37 +111,6 @@
 ## Feature 구현 estimation
 [[mimtokFeature]]
 
-## Reference 
-- tiktok clone source
-	- swift 
-		- https://github.com/dks333/Tiktok-Clone
-		- https://github.com/invisibleBully/TikTok
-		- https://github.com/liamreardon/windmill
-	- Flutter
-		- https://github.com/salvadordeveloper/TikTok-Flutter
-- Camera, VideoEditor 관련
-	- https://github.com/NextLevel/NextLevel
-	- https://github.com/gdxz123/GDTiktokEffectSwift 
-	- https://github.com/wangrenzhu/MetalVideoProcess
-	- https://github.com/tumblr/kanvas-ios
-	- https://github.com/jaiobs/OptiVideoEditor-for-iOS
-	- https://github.com/vitoziv/VideoCat
-	- https://github.com/zzzmobile/VideoGraph
-	- https://github.com/BradLarson/GPUImage3
-	- https://github.com/MetalPetal/MetalPetal
-	- https://github.com/qyz777/QEditor
-	- https://github.com/kxvn-lx/Kontax-Cam
-	- https://github.com/Video-io/VideoKitTikTokFeed
-		- video.io 라는 솔루션 sample app인데 상용인지 확실치 않음.
-- AR 관련
-	- https://github.com/AFathi/ARVideoKit
-	- https://github.com/eventtus/photo-editor
-	- https://github.com/google/mediapipe
-		- https://github.com/mgyong/awesome-mediapipe
-- 상용 SDK들 비교
-	- https://medium.com/@davegord86/10-best-face-filter-sdks-compared-updated-2020-9ca536b7a0e7
-- Tutorial
-	- [RayW의 AVFoudation Tutorial](https://www.raywenderlich.com/library?category_ids%5B%5D=157&domain_ids%5B%5D=1&sort_order=released_at)
-
+[[MimTok source reference]]
 ----
 - tags: #mimtok
