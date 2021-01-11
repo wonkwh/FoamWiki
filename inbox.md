@@ -52,7 +52,7 @@
 - [[doc/projectGenerationTool]] 
 
 ## Emacs
-
+- [[DoomEmacsTutorial]]
 # TF_Work
 - [[TPDoc/OnBoarding]]
 - [[TPDoc/MimTokRefactoring]]
