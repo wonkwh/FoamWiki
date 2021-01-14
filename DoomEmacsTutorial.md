@@ -20,10 +20,10 @@
 			> If Emacs finds an ~/.emacs file, it will ignore ~/.emacs.d, where Doom is
 			  typically installed. If you're seeing a vanilla Emacs splash screen, this may explain why.	  
 	  - `doom doctor` 에서 markdown-preview, Shellcheck가 없다는 워닝이 나온면 설치해 준다
-	  		```shell
-				npm install -g marked
-				brew install shellcheck
-			```
+		```shell
+			npm install -g marked
+			brew install shellcheck
+		```
 		- emacs 를 실행시키면 doom emacs 화면을 볼수 있다.
 			
 
