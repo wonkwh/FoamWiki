@@ -27,7 +27,16 @@
 		- emacs 를 실행시키면 doom emacs 화면을 볼수 있다.
 			
 
- 
+ ### evil mode 관련 
+ - vim 관련 editting이랑 겹친다. 
+ - [[PracticalVimBook]] 참고 
+ - [emacs - Evil Mode best practice? - Stack Overflow](https://stackoverflow.com/questions/8483182/evil-mode-best-practice)
+	 - 요기 보면 evil 모드에서 emacs key를 이용하는 법이 나온다. 참조하자. 
+
+### projectile 
+
+### swift-mode
+
  
 ## reference
 - https://seorenn.github.io/note/doom-emacs.html
