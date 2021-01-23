@@ -5,28 +5,28 @@
 ## Refactoring
 ###  File Structure & Architecture 
 - Project Folder 구조가 일관된 규칙이 없고 너무 난잡하다 
-	- service, model, networking, ui_scene, utility, extension으로 재구성
+	- service, model, networking, ui_scene, utility, extension 으로 재구성
 - Object-c 코드 100% 
-		- Apple 은 Object-C의 지원을 끝냈으므로 Swift로의 변환필요 
+		- Apple 은 Object-C의 지원을 끝냈으므로 Swift 로의 변환필요 
 - 기본적은 MVC architecture 
 	- mvc 의 전형적인 단점들 그대로 가지고 있음 
-	- Massive View Controller : 모든것을 ViewController에 다 때려넣어 비대해진다. 
+	- Massive View Controller : 모든것을 ViewController 에 다 때려넣어 비대해진다. 
 		- 예) `YBLookVideoVC.m` class file , 1213Line
 		- 유지 보스가 어려울뿐더러 code변경시 side effect 심각하게 우려 
 	- MVVM + Coordinator, Redux architecture, Clean Swift Architecture 선택하여 변경해야 함
 		-  RxSwift 혹은 Combine 이용하여 view, view- model Binding, notification 처리
-- TestCode가 1도 없다
-	- Refactoring하기 전 최소한의 BusinessLogic에 대한 UnitTest가 필요함
+- TestCode 가 1도 없다
+	- Refactoring 하기 전 최소한의 BusinessLogic에 대한 UnitTest 가 필요함
 - 2020/12/29 현재 compiler warning 208 개
 	- critical 한 warning이 있는지 쉽게 파악이 안됨
 ### Localization
-- 현재 First Language로 중국어
+- 현재 First Language 로 중국어
 - `InfoPList.strings` file 에 정의 
 - 현재 key 값도 중국어다! 
 	- key  는 모두 영어로 변경
-	- default language도 변경
+	- default language 도 변경
 - https://poeditor.com 등의 사용도 고려해서 CI, CD 서비스와 통합
-### Perfomance Issue
+### Performance Issue
 - 현재 video List scrolling issue 원인을 파악해보면 
 	- ios 10에서 부터 지원하는 list prefeching 기술을 이용하지 않음 
 		- 해당기술 적용하여 `YBLookVideoVC` class refactoring 
@@ -94,7 +94,7 @@
 	- MHBeautySDK
 		- https://ext.dcloud.net.cn/plugin?id=1933
 		- Camera Beauty Filter 
-		- 대체 가능한 소스들은 refrence 참조
+		- 대체 가능한 소스들은 reference 참조
 	- TXLiteAVSDK_Professional
 		- https://cloud.tencent.com/product/mlvb
 		- https://cloud.tencent.com/document/product/647

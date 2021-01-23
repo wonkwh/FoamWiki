@@ -7,7 +7,7 @@
 - Login / Singup
 - Notification
 - Upload Video
-- Reations (Like and Comment )
+- Relations (Like and Comment )
 - Share
 - Filter and Effect
 - Video Editing
@@ -19,7 +19,7 @@
 
 - Video preview before the registration
 - Location-based content
-- Real-time analytics
+- Real-time analytic
 - Live video streaming
 - AR filters
 

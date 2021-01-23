@@ -62,8 +62,13 @@ Back tap 등록
 	- Deliver는 TestFlight등으로 내부배포가 완료된 상태 
 	- QA/DQA : 이슈를 만든 사람이 QA를 실시하여 완료되고 Design 검증이 필요하면 DQA 를 진행하는 상태 , 여기서 이슈가 수정이 완료되면 ReadyForRelease로 변경하고 이슈가 수정되지 않았거나 디자인이 변경되지 않았으면 reject하여 open상태로 만듭니다. 
 	- ReadyForRelease는 AppStore에 릴리즈할 사항들
-	
 
+
+```
+kwanghyun won
+Research & Development Division
+iOS Product Director
+```
 
 
 
