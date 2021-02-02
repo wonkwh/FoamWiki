@@ -17,7 +17,12 @@
 - [[WhatIsaParser_Part3]]
 ### 127. Parsing and Performance Strings
 - [[ParsingPerformanceStrings]]
-- 
+
+## SwiftUI Form
+### 103.Concise Forms: SwiftUI
+- [[ConciseForms]]
+
+
 ----
 - tags: #tca_archtecture , #pointfree , #functional
 

@@ -3,8 +3,8 @@
 ## Tuist
 - https://tuist.io/docs/usage/getting-started/
 - xcodegen과의 차이점
-	- yml 파일이 아닌 swift source file로 config file 구성
-	- project generation뿐 아니라 build 까지 지원
+	- yml 파일이 아닌 swift source file 로 config file 구성
+	- project generation 뿐 아니라 build 까지 지원
 
 
 ## 첫 실행
@@ -39,10 +39,10 @@ xcode project 파일을 생성하려면
 	drwxr-xr-x     - wonkwh  9 12 11:40 Targets
 	drwxr-xr-x     - wonkwh  9 12 11:40 Tuist
 
-`MyTuistTempleate`은 폴더명으로 생성되며 workdpace file까지 같이 생성.  `Derived` folder도 추가 생성된다. 
-project file만 생성하려면 `tuist generate --project-only` 와 같이 flag를 붙인다 
+`MyTuistTempleate`은 폴더명으로 생성되며 workdpace file 까지 같이 생성.  `Derived` folder 도 추가 생성된다. 
+project file 만 생성하려면 `tuist generate --project-only` 와 같이 flag 를 붙인다 
 
-CLI에서 project 를 build하려면 
+CLI에서 project 를 build 하려면 
 
 	tuist build 
 
@@ -52,18 +52,18 @@ CLI에서 project 를 build하려면
 
 	tuist edit 
 
-  `Manifests` project를 생성하여 xcode 가 실행된다. 
+  `Manifests` project 를 생성하여 xcode 가 실행된다. 
   
   ### script build action 추가 
   - swiftlint, swiftformat, R.swift 과 같은 라이브러리를 추가하고 pre build script 를 추가
 
 ### 3rd party library
 - spm 을 이용해서 라이브러리 추가
-- Debug build에만 woodpeck library 를 추가
+- Debug build 에만 woodpecker library 를 추가
 	- https://www.woodpeck.cn/manuallink.html 
 
 ### add Feature Project
-custom project name, custom feature project를   [요기](https://github.com/alexanderwe/ios-starter) 에서는 `cookiecutter` tool을 사용
+custom project name, custom feature project 를   [요기](https://github.com/alexanderwe/ios-starter) 에서는 `cookiecutter` tool 을 사용
 - https://tuist.io/docs/commands/scaffold/
 
 ## result repository

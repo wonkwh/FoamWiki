@@ -26,6 +26,20 @@
 		```
 		- emacs 를 실행시키면 doom emacs 화면을 볼수 있다.
 			
+###  추가 패키지 설치 및 설정
+ - `SPC-f-p` 누르면 개인 설정파일( `~/doom.d/` 폴더 및에 파일) 
+    - `init.el` : 모듈설정,  원하는 목록에 추가후 `doom sync`시 자동으로 설치
+    - `config.el`: 일반적인 설정 코드 
+    - `packages.el`: 추가로 필요한 package , 필요없는 package  sync 시 설치나 삭제된다. 
+     `spc - h r` key 를 입력하면 reload 관련 단축키가 나온다. `SPC h r r` 은 sync 및 reload 단축키
+#### termial package 설치 
+- `init.el` file 에 ;;term 을 comment 제거 
+   - comment 토글 단축키는 `gc` 
+####  font 관련 설정
+
+```lisp
+(setq doom-font (font-spec : family "D2Coding" :size 12))
+```
 
  ### evil mode 관련 
  - vim 관련 editting이랑 겹친다. 

@@ -9,6 +9,9 @@ brew install clang-format
 	- Packge Control : Install Package -->  Clang Format
 	- Custom 설정
 		- Preferences --> Package Settings --> Clang Format 의  Settings-User와 Custom Style- User
+- VSCode 에서는 
+   - clang-format extension 설치
+   - `~/.clang-format` 에 설정파일 저장
 ## reference
 - https://github.com/TextureGroup/Texture/blob/master/.clang-format
 	- Texture library에서 쓰는 clang-format config file 

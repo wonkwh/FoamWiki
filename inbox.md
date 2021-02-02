@@ -21,6 +21,7 @@
 ## uikit
 - [[UIKitTip]]
 - [[UITabControllerTip]]
+- [[RefactoringMassiveAppDelegate]]
 ### UITableView 
  - [[EnumDrivenTableViewDevelopment]]
 ### UICollectionView
@@ -41,7 +42,7 @@
 - [[doc/SignInwithApple]]
 ## Course
 - [[AppStoreClone]]
-- 
+- [[PointfreeTutorial]]
 ## Log
 - [[UsingOSLog]]
 
@@ -57,6 +58,7 @@
 
 ## xcode
 - [[doc/projectGenerationTool]] 
+- [[doc/XcodeTip]]
 
 ## Emacs
 - [[DoomEmacsTutorial]]
