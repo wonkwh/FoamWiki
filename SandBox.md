@@ -1,5 +1,4 @@
-안녕하세요 어제 인사드렸던 개발팀 iOS 개발자 원광현입니다.  
-다름이 아니라 점심식사하면서 아이폰에서`QR코드`를 뒷탭두번으로 하는걸 보여드렸는데 아주 유용한듯 하여 혹시 아이폰 유저중 안쓰시는분들게  공유드립니다. 
+
 https://github.com/jeyraof/covid-19-qr-ios14-back-tap
 위 링크 가보시면 캡쳐와 함께 자세히 나와 있어 쉽게 따라하시면 됩니다.  
 정리하면 
@@ -62,14 +61,5 @@ Back tap 등록
 	- Deliver는 TestFlight등으로 내부배포가 완료된 상태 
 	- QA/DQA : 이슈를 만든 사람이 QA를 실시하여 완료되고 Design 검증이 필요하면 DQA 를 진행하는 상태 , 여기서 이슈가 수정이 완료되면 ReadyForRelease로 변경하고 이슈가 수정되지 않았거나 디자인이 변경되지 않았으면 reject하여 open상태로 만듭니다. 
 	- ReadyForRelease는 AppStore에 릴리즈할 사항들
-
-
-```
-kwanghyun won
-Research & Development Division
-iOS Product Director
-```
-
-
 
 ----

@@ -22,14 +22,18 @@
 - [[UIKitTip]]
 - [[UITabControllerTip]]
 - [[RefactoringMassiveAppDelegate]]
+
 ### UITableView 
  - [[EnumDrivenTableViewDevelopment]]
+
 ### UICollectionView
 
 ### push notificattin 
 - [Locali Notification](https://medium.com/quick-code/local-notifications-with-swift-4-b32e7ad93c2)
 	- [sourcecode](https://github.com/fakiho/LocalNotification)
-- 
+
+## AVFoundation
+- [[PlayingVideoUsingAVPlayer]]
 
 ## RxSwift, Combine
 - [[RxSwiftToCombineCheatsheet]]
@@ -62,7 +66,8 @@
 
 ## Emacs
 - [[DoomEmacsTutorial]]
-
+## VIM 
+- [[VimConfig]]
 ----
 # TF_Work
 - [[TPDoc/OnBoarding]]
