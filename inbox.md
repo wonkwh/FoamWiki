@@ -4,8 +4,6 @@
 - [[SwiftUIResource]]
 - [[SwiftUICleanCodingWithCustomViewModifiers]]
 - [[SwiftUI Form Tutorial]]
-- [[SwiftStyleGuide]]
-- [[SwiftNamingGuide]]
 - [[SwiftPlaygroundResource]]
 	- [[HowToUseSwiftUIinSwiftPlaygrounds]]
 
@@ -50,6 +48,11 @@
 ## Log
 - [[UsingOSLog]]
 
+## CodingConvention
+- [[SwiftNamingGuide]]
+- [[SwiftStyleGuide]]
+- [[SwiftLint]]
+- 
 ----
 # tools
 ## shell
