@@ -89,4 +89,6 @@ public class Log {
 ## reference
 - https://github.com/wangrenzhu/MetalVideoProcess/blob/master/MetalVideoProcess/Vender/Editor/Uitl/Log.swift
 - https://github.com/alexanderwe/LoggingKit
-- 
+
+----
+- tags: #log 

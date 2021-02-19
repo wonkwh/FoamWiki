@@ -2,11 +2,8 @@
 
 - getting-version-and-build-info-with-swift
 	- [ios - Getting Version and Build Info with Swift - Stack Overflow](https://stackoverflow.com/questions/24501288/getting-version-and-build-info-with-swift)
-
-
 	
 	```swift
-
 extension UIApplication {
 
     func applicationVersion() -> String {
@@ -27,6 +24,8 @@ extension UIApplication {
         return "v\(version)(\(build))"
     }
 }
+
+
   ```
   
   - get device model
