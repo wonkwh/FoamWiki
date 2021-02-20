@@ -8,6 +8,14 @@
 	- [[HowToUseSwiftUIinSwiftPlaygrounds]]
 
 ----
+# Project
+## Mac Project
+- [[SnippetProject]]
+## iOS Project
+## Company
+- [[TPDoc/MimTokChecklist]]
+
+
 # Functional 
 -  [[PointfreeTutorial]] 
 
