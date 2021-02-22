@@ -49,11 +49,6 @@
 - image 의 width, height를 UserDefault 저장하고 있다 !!
 		- Nuke, Kingsfisher 등의 image cache library를 사용하여 개선필요
 		- Thumbnail images의 scales down 을 pre-processor로 처리필요
-
-- [ ] Resource 가 모두 png파일로 폴더로 분산 
-	- [x] `图片` 라는 이름의 폴더 --> 모두 `Resource` 폴더로 변경 완료
-	- [x] 사용하지 않는 쓸모없는 리소스들이 다수있다 
-	- [x] vector graphics file (pdf file) 로 모두 변경하고 asetLibrary 로 통합
 - [[PreviewVideoScrollPerformanceRefactgoring]]
 ### DevOps
 - Crash debug Log 받아볼수 없음 
@@ -89,6 +84,9 @@
 		- Tencent Map SDK
 		- `AppDelegate.m` 파일에 `sendLocation()` 함수에서 key 등록외에는 없음 
 		- 제거 완료
+   - SendBird 
+      - 비싸다 대안으로 
+         - [ScaleDrone/Scaledrone-Swift: Swift Client for Scaledrone Realtime Messaging Service (WIP) (github.com)](https://github.com/ScaleDrone/Scaledrone-Swift)
 
 - 그외 제거 할수 없는 필수 Media Filter, AR 관련 
 	- MHBeautySDK
