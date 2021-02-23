@@ -44,3 +44,5 @@
 - [sindresorhus/LaunchAtLogin: Add “Launch at Login” functionality to your macOS app in seconds (github.com)](https://github.com/sindresorhus/LaunchAtLogin)
 - [waylybaye/XcodeCleaner-SwiftUI: Make Xcode Clean Again (github.com)](https://github.com/waylybaye/XcodeCleaner-SwiftUI)
 - https://github.com/glushchenko/fsnotes
+- [IvanMathy/Boop: A scriptable scratchpad for developers. In slow yet steady progress. (github.com)](https://github.com/IvanMathy/Boop)
+- 
