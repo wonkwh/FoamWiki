@@ -11,6 +11,7 @@
 # Project
 ## Mac Project
 - [[SnippetProject]]
+- [[TxtTodoProject]]
 ## iOS Project
 ## Company
 - [[TPDoc/MimTokChecklist]]
