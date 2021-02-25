@@ -37,5 +37,7 @@ inoremap <c-c> <esc>
 inoremap <c-k> <right><esc>Da
 ```
 
+## reference
+- [Learn-Vim/ch21\_vimrc.md at master · iggredible/Learn-Vim (github.com)](https://github.com/iggredible/Learn-Vim/blob/master/ch21_vimrc.md) 
 ----
 - tags: #vim 

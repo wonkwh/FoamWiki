@@ -80,6 +80,7 @@
 - [[DoomEmacsTutorial]]
 ## VIM 
 - [[VimConfig]]
+- [[PracticalVimBook]]
 ----
 # TF_Work
 - [[TPDoc/OnBoarding]]
