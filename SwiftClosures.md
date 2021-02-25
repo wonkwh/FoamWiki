@@ -111,7 +111,9 @@ This is a perfectly valid, and actually even more common way to pass a closure i
 
 A closure is a block of code assigned to a variable. This variable can be used just like other variables to e.g. pass it to a function.
 
-The common use-case for closures in Swift is completion handlers. A completion handler is a block of code executed after a lengthy action gets completed. This is handy as you do not need to worry about checking if the action is completed or not.
+ - The common use-case for closures in Swift is completion handlers. 
+ - A completion handler is a block of code executed after a lengthy action gets completed. 
+ - This is handy as you do not need to worry about checking if the action is completed or not.
 
 References
 ----------
