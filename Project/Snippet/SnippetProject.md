@@ -46,4 +46,7 @@
 - https://github.com/glushchenko/fsnotes
 - [IvanMathy/Boop: A scriptable scratchpad for developers. In slow yet steady progress. (github.com)](https://github.com/IvanMathy/Boop)
 
+----
+- tags: #macapp #macDev
+
 
