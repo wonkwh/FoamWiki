@@ -18,8 +18,19 @@
 ### 127. Parsing and Performance Strings
 - [[ParsingPerformanceStrings]]
 
+## The Composable Architecture
+
+### 100. Tour of the composable architecture part 1
+- [[thecomposablearchitecturepart1]]
+### 101. Tour of the composable architecture part 2
+- [[thecomposablearchitecturepart2]]
+### 102. Tour of the composable architecture part 3
+- [[thecomposablearchitecturepart3]]
+### 103. Tour of the composable architecture part 3
+- [[thecomposablearchitecturepart4]]
+
 ## SwiftUI Form
-### 103.Concise Forms: SwiftUI
+### 103.Concise Forms: swiftUI
 - [[ConciseForms]]
 
 

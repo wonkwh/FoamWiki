@@ -18,7 +18,22 @@
 ## Some Behavior Recommendations
 - https://www.raywenderlich.com/2325-supercharging-your-xcode-efficiency#toc-anchor-004
 
-
+## plugin 
+### xvim2
+- bigsur 이상 12.4 버전부터 추가 플러그인을 붙이면 apple signin이 안되는 문제가 나온다. 
+   - 2 copy 로 하나는 dev용으로 다른 하나는 apple signin 용으로 쓰는 방법 으로 해야함 
+      - https://github.com/XVimProject/XVim2/issues/340#issuecomment-768653857
+      ```
+      - Download from developer.apple.com/download/more
+      - Put the downloaded .xip file in a working directory somewhere
+      - 2b) If you want two copies, then use two working directories
+      - cd to the directory and type "xip -x filename" (22 GB)
+      - After 20-30 minutes, you will get a directory called Xcode.app will appear in the current directory (31GB)
+      - Rename the Xcode.app directory to something_else.app and move it to /Applications
+      - You're good to go. Run your new app like you would any other.
+      - As was already pointed out, you probably shouldn't run both copies at the same time!
+      ```
+   
 ## Reference
 - [Supercharging Your Xcode Efficiency | raywenderlich.com](https://www.raywenderlich.com/2325-supercharging-your-xcode-efficiency)
    - Some Behavior Recommendations 참조해서 setting 변경

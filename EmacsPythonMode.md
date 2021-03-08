@@ -31,6 +31,7 @@ python --version
 
 ## reference
 - [Doom Emacs의 Python 프로그래밍 환경 - Seorenn Note](https://seorenn.github.io/note/doom-emacs-python-env.html)
+- [Doom Emacs에서 Python 개발 환경 설정하기 (tistory.com)](https://seorenn.tistory.com/160)
 - [pyenv로 파이썬 버전 관리하기 - Seorenn Note](https://seorenn.github.io/note/pyenv-manage-python-version.html)
 - [Python Programming in Emacs | Chao's Blog (upenn.edu)](https://www.seas.upenn.edu/~chaoliu/2017/09/01/python-programming-in-emacs/)
 
