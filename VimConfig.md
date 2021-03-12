@@ -39,5 +39,9 @@ inoremap <c-k> <right><esc>Da
 
 ## reference
 - [Learn-Vim/ch21\_vimrc.md at master · iggredible/Learn-Vim (github.com)](https://github.com/iggredible/Learn-Vim/blob/master/ch21_vimrc.md) 
+- [ChristianChiarulli/nvim: Truly the Ultimate Neovim Config NVCode (github.com)](https://github.com/ChristianChiarulli/nvim)
+
+----
+- [[VimEditor]], [[PracticalVimBook]]
 ----
 - tags: #vim 

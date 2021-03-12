@@ -12,6 +12,7 @@
 ## Mac Project
 - [[SnippetProject]]
 - [[TxtTodoProject]]
+- [[CourseNote]]
 ## iOS Project
 ## Company
 - [[TPDoc/MimTokChecklist]]
@@ -45,6 +46,7 @@
 
 ## RxSwift, Combine
 - [[RxSwiftToCombineCheatsheet]]
+- [[DelegateToCombine]]
 ## architecture
 - The Composal Archtecture
 	- [[SwiftComposalArchitectureResource]]
@@ -82,6 +84,7 @@
 ## VIM 
 - [[VimConfig]]
 - [[PracticalVimBook]]
+- [[VimEditor]]
 ----
 # TF_Work
 - [[TPDoc/OnBoarding]]
