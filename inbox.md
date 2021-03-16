@@ -16,7 +16,8 @@
 
 # Functional 
 -  [[PointfreeTutorial]] 
-
+# Python
+- [[100DaysOfPythonCourse]]
 # iOS Develop
 
 ## swift language
