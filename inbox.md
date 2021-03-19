@@ -32,6 +32,8 @@
 - [[SwiftUI Form Tutorial]]
 - [[HowToUseSwiftUIinSwiftPlaygrounds]]
 
+## Debug
+- [[MemoryLeakCheck]]
 
 ## uikit
 - [[UIKitTip]]
