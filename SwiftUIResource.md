@@ -65,7 +65,7 @@
 - LBTA의 swiftUI cource app #LBTA 
 	- https://github.com/28cmm/TravelDiscovery 
 	- https://github.com/aymenafia/TravelDiscovery
-- 
+- [sameersyd/Expenso-iOS: A Simple Expense Tracker App built to demonstrate the use of SwiftUI, CoreData, Charts, Biometrics (Face & Touch ID) and MVVM Architecture. (github.com)](https://github.com/sameersyd/Expenso-iOS)
 
 ## Mac
 - https://github.com/Dimillian/RedditOS
@@ -88,6 +88,7 @@
 
 ### sheet, drawer
 - https://github.com/nerdsupremacist/Snap
+- 
 ### indicator
 - https://github.com/exyte/ActivityIndicatorView
 ### popup, alert

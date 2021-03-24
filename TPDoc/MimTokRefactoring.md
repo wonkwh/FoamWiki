@@ -93,6 +93,7 @@
 		- https://ext.dcloud.net.cn/plugin?id=1933
 		- Camera Beauty Filter 
 		- 대체 가능한 소스들은 reference 참조
+      
 	- TXLiteAVSDK_Professional
 		- https://cloud.tencent.com/product/mlvb
 		- https://cloud.tencent.com/document/product/647
@@ -102,7 +103,8 @@
 			- 비용은 [mimtokFeature](mimtokFeature.md) 참조
 	- H5 
 		- Hybrid WebView 관련
-
+   - [[MimTokRecordFeature]]
+   
 - Media 관련
 
 
