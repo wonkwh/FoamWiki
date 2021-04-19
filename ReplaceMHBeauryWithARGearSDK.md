@@ -42,6 +42,8 @@
 -  `MHBeautySDK.framework` 를 제거하고 `ARGear.framework`로 교체
    -  `TXLiteAVSDK` 는 그대로 재사용.
    -  `TCVideoRecordController` 에서 제거후 `TXVideoCustomProcessDelegate` 을 구현
+      -  [Mixing Metal and OpenGL Rendering in a View | Apple Developer Documentation](https://developer.apple.com/documentation/metal/mixing_metal_and_opengl_rendering_in_a_view)
+      -  위 참조하여 `MTLTexture`를 OpenGL texture로 변경하여야 한다. 
    -  ARGear 에서 제공하는 추가 필터및 ar sticker, 등의 기능이 정상동작하여야 한다. 
 -  `MHSDK` 에 포함되어 있던 `MHUI` 제거 후 재개발
    -  현 zeplin UI/UX 디자인 가이드에 맞게 UI 수정

@@ -27,7 +27,7 @@
 - [FranckNdame/swiftui.builds: building cool stuff with swiftui (github.com)](https://github.com/FranckNdame/swiftui.builds)
 
 
-## List 관련
+## List, Grid 관련
 - https://medium.com/better-programming/meet-greet-advanced-lists-in-swiftui-80ab6f08ca03
 	- empty, error, loading 
 - https://github.com/crelies/AdvancedList
@@ -35,6 +35,7 @@
 	- swiftui 에서 skeletonView 구현 
 	- https://github.com/CSolanaM/SkeletonUI
 - https://github.com/pietropizzi/GridStack
+   - ios 13에서 LazyHGrid 같은 구현시
 - [how-to-fix-slow-list-updates-in-swiftui](https://www.hackingwithswift.com/articles/210/how-to-fix-slow-list-updates-in-swiftui)
 
 

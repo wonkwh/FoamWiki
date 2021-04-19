@@ -19,6 +19,10 @@ print(f"{random\_name} is going to buy the meal today!")
    - expand 함수 
 - `random` module 
    - random.choice 함수 
+
+### days 6 - python function
+- [Built-in Functions — Python 3.9.4 documentation](https://docs.python.org/3/library/functions.html)
+- 
 ## Intermediate
 ### days 58
 
