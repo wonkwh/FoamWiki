@@ -7,4 +7,6 @@ git add .
 git commit -m "fixed untracked files"
 ```
 - [참고]([.gitignore is ignored by Git - Stack Overflow](https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git))
+
+
 2. 

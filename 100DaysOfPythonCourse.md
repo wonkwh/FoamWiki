@@ -1,5 +1,9 @@
 # 100 days of python code
 - [100 Days of Code - The Complete Python Pro Bootcamp for 2021 | Udemy](https://www.udemy.com/course/100-days-of-code/learn/lecture/18029081#overview)
+   - 참조 : [jackfrued/Python-100-Days: Python](https://github.com/jackfrued/Python-100-Days)
+      - 요건 중국어로 된 다른 repo, 영번역하면 읽을만 하니 참조하자.. 
+
+
 ## Beginner
 ### days 4
 ```python
