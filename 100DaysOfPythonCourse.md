@@ -26,7 +26,9 @@ print(f"{random\_name} is going to buy the meal today!")
 
 ### days 6 - python function
 - [Built-in Functions — Python 3.9.4 documentation](https://docs.python.org/3/library/functions.html)
-- 
+
+### days 7 -hangman
+
 ## Intermediate
 ### days 58
 

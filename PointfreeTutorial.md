@@ -34,6 +34,8 @@
 - [[ConciseForms]]
 
 
+### 146.# Derived Behavior: The Problem
+- [[Derived BehaviorPart1]]
 ----
 - tags: #tca_archtecture , #pointfree , #functional
 
