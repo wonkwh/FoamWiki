@@ -1,6 +1,6 @@
 # Derived Behavior: The Problem
 
-### [Introduction](https://www.pointfree.co/episodes/ep146-derived-behavior-the-problem#t5)
+### Introduction
 
 There’s a large complex problem that we all grapple with when making applications, but it’s not often addressed head on and given a systematic study. Our applications are built as large blobs of state, which represents the actual data of the application, and behavior to evolve that state over time. Now this big blob of data and behavior is extremely difficult to understand all at once. It’s of course all there, even if some parts are hidden away in little implicit chunks of state and behavior, but ideally we could cook up tools and techniques that allow us to understand only a small part of the application at once.
 
@@ -12,7 +12,7 @@ This is a surprisingly subtle interaction to get right, especially in vanilla Sw
 
 Now, if you are a user of our Composable Architecture library this all probably sounds very similar to the concept of `Store`s and `.scope`s, and you’re right, but we want to use vanilla SwiftUI as a jumping off point to dig even deeper into those concepts.
 
-### [A moderately complex SwiftUI application](https://www.pointfree.co/episodes/ep146-derived-behavior-the-problem#t148)
+### A moderately complex SwiftUI application
 
 In order to understand why `.scope` is so powerful we need to first understand what it’s like to build SwiftUI applications in a world where `.scope` is not available.
 
@@ -214,7 +214,7 @@ var body: some View {
 }
 ```
 
-### [Child-parent view model communication](https://www.pointfree.co/episodes/ep146-derived-behavior-the-problem#t848)
+### Child-parent view model communication
 
 Ok, so this is pretty cool. This is obviously a toy application, but it is demonstrating something really powerful. It’s kind of hard to see because SwiftUI is doing so much work for us, but the fact that we have state instantly synchronizing state across two different screens, and really 3 screens if you consider the surrounding tab view a screen in its own right, is really amazing, and hard to do right if you don’t have the right tools.
 
@@ -418,7 +418,7 @@ self.profile.objectWillChange
   .store(in: &self.cancellables)
 ```
 
-### [Parent-child view model communication](https://www.pointfree.co/episodes/ep146-derived-behavior-the-problem#t1556)
+### Parent-child view model communication
 
 Huh, it’s still not working. What gives?
 
@@ -648,7 +648,7 @@ We can fix this by observing changes directly on the fields of the observable ob
 
 Now it’s worth mentioning that the techniques we have outlined are just the best we have come up with so far, but there could be better ones out there. We’ve seen some people use singletons for coordinating across many view models, and although that sounds scary it’s certainly worth trying to see if it can be made reasonable. Also, Apple’s WWDC event is happening soon, and so maybe soon we’ll get an official story from Apple on how to handle child view models.
 
-### [Next time: the Composable Architecture](https://www.pointfree.co/episodes/ep146-derived-behavior-the-problem#t2358)
+### Next time: the Composable Architecture
 
 But until the solution is handed to us from on high, we actually already have a really robust solution to this problem…that is, if you’re using the Composable Architecture.
 
