@@ -1,4 +1,5 @@
 # VimEditor 
+- [[VImTips]]
 
 ## nvim config
 - [siduck76/neovim-dots: my neovim configs](https://github.com/siduck76/neovim-dots)

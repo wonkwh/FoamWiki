@@ -1,6 +1,6 @@
 # Derived Behavior: The Problem
 
-### Introduction
+## Introduction
 
 There’s a large complex problem that we all grapple with when making applications, but it’s not often addressed head on and given a systematic study. Our applications are built as large blobs of state, which represents the actual data of the application, and behavior to evolve that state over time. Now this big blob of data and behavior is extremely difficult to understand all at once. It’s of course all there, even if some parts are hidden away in little implicit chunks of state and behavior, but ideally we could cook up tools and techniques that allow us to understand only a small part of the application at once.
 
@@ -12,305 +12,321 @@ This is a surprisingly subtle interaction to get right, especially in vanilla Sw
 
 Now, if you are a user of our Composable Architecture library this all probably sounds very similar to the concept of `Store`s and `.scope`s, and you’re right, but we want to use vanilla SwiftUI as a jumping off point to dig even deeper into those concepts.
 
-### A moderately complex SwiftUI application
 
-In order to understand why `.scope` is so powerful we need to first understand what it’s like to build SwiftUI applications in a world where `.scope` is not available.
 
-So let’s start. We are going to build a simple, toy application. It will be a tab view application, where the first tab holds a simple counter feature with the ability to mark some numbers as our favorites, and then the second tab will show all those favorite numbers with the ability to remove that number from the favorites.
+##  UI 구현 
 
-Nothing too complex, but it actually gets at the heart of quite a complex interaction that is difficult to correctly model in SwiftUI applications. What we have here is two domains of an application that operate independently of each other, yet somehow still communicate with one another. A mutation in one screen is instantly shown in the other. If I add a favorite number in the first tab, it instantly shows in the second tab. If I remove that favorite from the second tab, we instantly see the result of that in the first tab.
+```swift
+      
 
-Let’s rebuild this application in vanilla SwiftUI so that we can understand why this toy application is already quite complex. We’ll start with the view layer, which can be done in a straightforward manner.
+//
 
-We’ll create a view that puts a `TabView` at the root with two views, one for each tab.
+// ContentView.swift
 
-```
+// derivedBehavior
+
+//
+
+// Created by kwanghyun won on 2021/06/11.
+
+//
+
+  
+
+import SwiftUI
+
+  
+
 struct ContentView: View {
-  var body: some View {
-    TabView {
-      Text("Counter")
-        .tabItem { Text("Counter") }
 
-      Text("Profile")
-        .tabItem { Text("Profile") }
-    }
-  }
+ var body: some View {
+
+ TabView {
+
+ CountView()
+
+ .tabItem { Text("Counter") }
+
+ ProfileView()
+
+ .tabItem { Text("Profile") }
+
+ }
+
+ }
+
 }
-```
 
-That already gets us a simple view on the screen if run the preview:
+  
 
-```
+struct CountView: View {
+
+ var body: some View {
+
+ VStack {
+
+ HStack {
+
+ Button("-") {
+
+ }
+
+ Text("0")
+
+ Button("+") {
+
+ }
+
+ }
+
+ Button("Save") {
+
+ }
+
+ }
+
+ }
+
+}
+
+  
+
+struct ProfileView: View {
+
+ var body: some View {
+
+ List {
+
+ ForEach(1...10, id: \.self) { number in
+
+ HStack{
+
+ Text("\(number)")
+
+ Spacer()
+
+ Button("Removed") {
+
+ }
+
+ }
+
+ }
+
+ }
+
+ }
+
+}
+
+  
+
 struct ContentView_Previews: PreviewProvider {
+
   static var previews: some View {
-  ContentView()
-  }
+
+    ContentView()
+
+ }
 }
 ```
 
-Now instead of simple `Text` views for each tab we’re going to want something with a fuller feature set. We could implement that view directly in line right inside `AppView`, but it’s far more customary to break out those things into their own standalone views.
+## viewModel 구현
+- AppViewModel 로 구현
 
-We can start with the counter view, which just needs an `HStack` to put the minus button, count label and plus button next to each other, and then all of that wrapped in a `VStack` to put the “Save” button underneath:
 
-```
-struct VanillaCounterView: View {
+```swift
+import SwiftUI
+
+class AppViewModel: ObservableObject {
+  @Published var count = 0
+  @Published var favorited: Set<Int> = []
+}
+
+struct ContentView: View {
+  @ObservedObject var viewModel: AppViewModel
+    var body: some View {
+      TabView {
+        CountView(viewModel: viewModel)
+          .tabItem { Text("Profile \(self.viewModel.count)")  }
+        ProfileView(viewModel: viewModel)
+          .tabItem { Text("Profile \(self.viewModel.favorited.count)")  }
+      }
+    }
+}
+
+struct CountView: View {
+  @ObservedObject var viewModel: AppViewModel
+  
   var body: some View {
     VStack {
       HStack {
-        Button("-") { }
-        Text("0")
-        Button("+") { }
+        Button("-") {
+          self.viewModel.count -= 1
+        }
+        Text("\(self.viewModel.count)")
+        Button("+") {
+          self.viewModel.count += 1
+        }
       }
-      Button("Save") { }
-    }
-  }
-}
-```
-
-We don’t currently have any data to populate the count text or any way of executing behavior in those button action closures, but we’ll get to that soon enough.
-
-Next we could do the profile view, which is just a `List` wrapping a `ForEach` to display a bunch of numbers with a remove button to the right of the number:
-
-```
-struct VanillaProfileView: View {
-  var body: some View {
-    List {
-      ForEach(1...10, id: \.self) { number in
-        HStack {
-          Text("\(number)")
-          Spacer()
-          Button("Remove") { }
+      
+      if self.viewModel.favorited.contains(self.viewModel.count) {
+        Button("Remove") {
+          self.viewModel.favorited.remove(self.viewModel.count)
+        }
+      } else {
+        Button("Save") {
+          self.viewModel.favorited.insert(self.viewModel.count)
         }
       }
     }
   }
 }
-```
 
-With some basic view hierarchy in place we could start filling in some behavior for these screens. In SwiftUI one does this by creating a class to conform to `ObservableObject`. This gives you a place to hold onto state so that you can add behavior to that state and so that SwiftUI can observe all changes to the state:
-
-```
-class AppViewModel: ObservableObject {
-
-}
-```
-
-The only state we care about in the application right now is the current count value and the set of favorites:
-
-```
-class AppViewModel: ObservableObject {
-  @Published var count = 0
-  @Published var favorites: Set<Int> = []
-}
-```
-
-We’d like to have access to this view model in the counter view:
-
-```
-struct VanillaCounterView: View {
+struct ProfileView: View {
   @ObservedObject var viewModel: AppViewModel
-
-  ...
-}
-```
-
-But that also means the parent must hold onto it in order to pass the view model down to the child view:
-
-```
-struct VanillaContentView: View {
-  @ObservedObject var viewModel: AppViewModel
-
-  var body: some View {
-    TabView {
-      VanillaCounterView(viewModel: self.viewModel)
-
-    ...
-  }
-}
-```
-
-And similarly for the profile view:
-
-```
-struct VanillaProfileView: View {
-  @ObservedObject var viewModel: AppViewModel
-
-  ...
-}
-```
-
-And it can be passed this view model from the app view:
-
-```
-VanillaProfileView(viewModel: self.viewModel)
-  .tabItem { Text("Profile") }
-```
-
-We just need to pass this view model to `VanillaContentView` in the preview and app entry point.
-
-Now that all of our views have access to the view model we can start implementing behavior and everything should just magically work. For example, we can hook up the increment and decrement buttons in the counter view by just mutating the view model’s `count` field right in the action closure:
-
-```
-HStack {
-  Button("-") { self.viewModel.count -= 1 }
-  Text("\(self.viewModel.count)")
-  Button("+") { self.viewModel.count += 1 }
-}
-```
-
-We can further implement the save and remove functionality for the favorites by doing a little bit of conditional logic to check if the current count is in the favorites, and then determining which type of button should be displayed:
-
-```
-if self.viewModel.favorites.contains(self.viewModel.count) {
-  Button("Remove") {
-    self.viewModel.favorites.remove(self.viewModel.count)
-  }
-} else {
-  Button("Save") {
-    self.viewModel.favorites.insert(self.viewModel.count)
-  }
-}
-```
-
-Implementing the behavior of the profile is also quite straightforward:
-
-```
-struct VanillaProfileView: View {
-  @ObservedObject var viewModel: AppViewModel
-
+  
   var body: some View {
     List {
-      ForEach(self.viewModel.favorites.sorted(), id: \.self) { number in
-        HStack {
+      ForEach(self.viewModel.favorited.sorted(), id: \.self) { number in
+        HStack{
           Text("\(number)")
           Spacer()
-          Button("Remove") {
-            self.viewModel.favorites.remove(number)
+          Button("Removed") {
+            self.viewModel.favorited.remove(number)
           }
         }
       }
     }
   }
 }
-```
 
-Now ideally we probably wouldn’t want to just reach into the view model and mutating it directly from the view because any logic in the view is very difficult test. Either requiring a broad testing tool such as snapshot testing, which is hard to test small, focused parts of your application, or you have to use some big machinery like UI testing, which can be very involved, slow and flakey.
-
-Instead we should probably implement endpoints on the view model, defined as methods, that implement this logic, and then the view can just invoke those methods. That makes the view model testable outside the context of a SwiftUI view, and simplifies the logic of the view because it just needs to invoke a method. However, we’re not going to do that for the purposes of this demo, but we want to mention it.
-
-But, that point aside, the application now fully works. We can add and subtract from the counter, we can add and remove numbers from our favorites, and we can view the favorites from the profile screen. We can even remove favorites from the profile and the counter screen will show that updated state.
-
-Let’s add one more quick feature. Currently the `AppView` isn’t actually using the view model in any real way. It’s just holding onto it so that it can hand it off to the counter and profile screens. Let’s change that by showing the current count and number of favorites in the tab items:
-
-```
-var body: some View {
-  TabView {
-    VanillaCounterView(viewModel: self.viewModel)
-      .tabItem { Text("Counter \(self.viewModel.count)") }
-
-    VanillaProfileView(viewModel: self.viewModel)
-      .tabItem { Text("Profile \(self.viewModel.favorites.count)") }
-  }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+      ContentView(viewModel: .init())
+    }
 }
+
 ```
+
 
 ### Child-parent view model communication
+- `CountViewModel`, `ProfileViewMode`로 분리 
 
-Ok, so this is pretty cool. This is obviously a toy application, but it is demonstrating something really powerful. It’s kind of hard to see because SwiftUI is doing so much work for us, but the fact that we have state instantly synchronizing state across two different screens, and really 3 screens if you consider the surrounding tab view a screen in its own right, is really amazing, and hard to do right if you don’t have the right tools.
+```swift
+import SwiftUI
 
-But now we’re going to throw a wrench into all the niceness SwiftUI gives us. Although what we have built here will work perfectly fine for a simple application, it unfortunately is not long for this world. As soon as your application needs more screens, more functionality and more communication between screens the pattern of putting all your application’s logic into a single gigantic object that is passed around everywhere becomes completely untenable.
-
-Instead what we’d like to be able to do is split up the `AppViewModel` into some logically smaller pieces that can operate in isolation without knowing too much about the other domains while still having the ability to communicate with each other. That may sound a little weird, but it comes with tons of benefits as we mentioned before:
-
--   You can build, run and test subsets of your application in isolation without needing to understand the entire application at once.
-
--   If you further split those subsets of the application into their own module you further strengthen the boundary between components, which makes them more independent, more versatile, easier to refactor, and it becomes more clear when a component is doing things it shouldn’t be, such as trying to reach out to global state.
-
--   And once you accomplish a bit of modularization you will see speed up in compile times because now the Swift compiler can be smarter in how it parallelizes building your application.
-
-And that’s just barely scratching the surface. There are tons of benefits. And every framework in every language tries to solve this problem. Whether you are using Swift and SwiftUI, or JavaScript and React, or Kotlin and Android, everyone wants to break down their applications behavior into sub-objects that can be understood in isolation and pieced back together.
-
-So, let’s try refactoring our application to split up its responsibilities. We’d love if each screen could be powered off of its own view model, and then somehow have them piece together to form the full application.
-
-We’ll begin with the counter view. Let’s introduce a new view model that is only concerned with the domain of the counter:
-
-```
-class CounterViewModel: ObservableObject {
+class AppViewModel: ObservableObject {
   @Published var count = 0
-  @Published var favorites: Set<Int> = []
-}
-```
-
-And we’ll swap out the `AppViewModel` for the new `CounterViewModel`:
-
-```
-struct VanillaCounterView: View {
-  @ObservedObject var viewModel: CounterViewModel
-
-  ...
-}
-```
-
-Amazingly everything in this view continues to compile just fine, the only error is up in the `VanillaContentView` because we aren’t passing the right type of view model when constructing the counter view. We’ll get to that in a moment though.
-
-Next let’s do the same for the profile view:
-
-```
-class ProfileViewModel: ObservableObject {
-  @Published var favorites: Set<Int> = []
+  @Published var favorited: Set<Int> = []
 }
 
-struct VanillaProfileView: View {
-  @ObservedObject var viewModel: ProfileViewModel
 
-  ...
-}
-```
-
-And again this view compiles, we just have an error up in the app view. So let’s look at that now.
-
-Perhaps the simplest thing we could do is just to hold onto both view models in the `VanillaContentView`:
-
-```
-struct VanillaContentView: View {
-
+struct ContentView: View {
   @ObservedObject var counterViewModel: CounterViewModel
   @ObservedObject var profileViewModel: ProfileViewModel
+    var body: some View {
+      TabView {
+        CountView(viewModel: counterViewModel)
+          .tabItem { Text("Profile \(self.counterViewModel.count)")  }
+        ProfileView(viewModel: profileViewModel)
+          .tabItem { Text("Profile \(self.profileViewModel.favorited.count)")  }
+      }
+    }
+}
 
+class CounterViewModel: ObservableObject {
+  @Published var count = 0
+  @Published var favorited: Set<Int> = []
+}
+
+struct CountView: View {
+  @ObservedObject var viewModel: CounterViewModel
+  
   var body: some View {
-    TabView {
-      VanillaCounterView(viewModel: self.counterViewModel)
-        .tabItem { Text("Counter \(self.counterViewModel.count)") }
-
-      VanillaProfileView(viewModel: self.profileViewModel)
-        .tabItem { Text("Profile \(self.profileViewModel.favorites.count)") }
+    VStack {
+      HStack {
+        Button("-") {
+          self.viewModel.count -= 1
+        }
+        Text("\(self.viewModel.count)")
+        Button("+") {
+          self.viewModel.count += 1
+        }
+      }
+      
+      if self.viewModel.favorited.contains(self.viewModel.count) {
+        Button("Remove") {
+          self.viewModel.favorited.remove(self.viewModel.count)
+        }
+      } else {
+        Button("Save") {
+          self.viewModel.favorited.insert(self.viewModel.count)
+        }
+      }
     }
   }
 }
-```
 
-And now this part of the code is compiling, but our SwiftUI preview and app entry point is having problems because we now need to provide both view models there, as well:
-
-```
-  VanillaContentView(
-
-    counterViewModel: .init(),
-    profileViewModel: .init()
-  )
+class ProfileViewModel: ObservableObject {
+  @Published var count = 0
+  @Published var favorited: Set<Int> = []
 }
+
+struct ProfileView: View {
+  @ObservedObject var viewModel: ProfileViewModel
+  
+  var body: some View {
+    List {
+      ForEach(self.viewModel.favorited.sorted(), id: \.self) { number in
+        HStack{
+          Text("\(number)")
+          Spacer()
+          Button("Removed") {
+            self.viewModel.favorited.remove(number)
+          }
+        }
+      }
+    }
+  }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+      ContentView(
+        counterViewModel: .init(),
+        profileViewModel: .init()
+      )
+    }
+}
+elf) { number in
+        HStack{
+          Text("\(number)")
+          Spacer()
+          Button("Removed") {
+            self.viewModel.favorited.remove(number)
+          }
+        }
+      }
+    }
+  }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+      ContentView(
+        counterViewModel: .init(),
+        profileViewModel: .init()
+      )
+    }
+}
+
 ```
 
-And now everything compiles, but does it work?
+- `Profile` tab이 정상적으로 동작하지 않는다. 
+    - 당연히 CountViewModel과 ProfileViewModel 이 전혀 연결되어 있지 않은 viewModel이므로 당연한 결과 
 
-If we run the preview we will see that the counter seems to work, and the the tab item is updating, but if we save some numbers the second tab’s UI doesn’t update at all, nor does it’s tab item.
 
-This shouldn’t be too surprising because we now have two fully separate, independent view models. There’s no coordination between them, and so they are operating on fully distinct pieces of state.
-
-However, even though it doesn’t currently work we have at least achieved some isolation between the screens. If we wanted to we could even move `CounterView` and `CounterViewModel` into their own module, and `ProfileView` and `ProfileViewModel` could go into their own module, all without a single dependency between them. This means we could start building, running and testing them in full isolation without having to worry about all of the state and responsibilities of the full application.
-
-With that said, we need to do a bit of extra work to integrate these two view models so that certain changes in one will be instantly reflected in the other. A place we could attempt this is back in the `AppViewModel`, which currently isn’t being used at all. What if that view model held references to the other two view models?
-
-One way to do this would be to hold onto some `@Published` properties:
 
 ```
 class AppViewModel: ObservableObject {
@@ -377,11 +393,6 @@ self.counter.objectWillChange
   .sink { self.objectWillChange.send() }
 ```
 
-> ⚠️ Result of call to ‘sink(receiveValue:)’ is unused
-
-However, `.sink` returns a value, and we’re getting a warning about that now. It returns a cancellable, which we have to hold onto in our view model, otherwise this subscription will be immediately killed and we will never be notified of any updates.
-
-So, let’s add a set of cancellables to the `AppViewModel` for storing these:
 
 ```
 class AppViewModel: ObservableObject {
@@ -517,6 +528,8 @@ This will make it so that when we enter an echo chamber of replays happening bac
 
 If we run the preview again we will see that everything seems to work, which is great, but this solution isn’t ideal even though it is short and succinct. One problem is that we are doing extra work to break this cycle. Not only do we need to do `.removeDuplicates()`, which incurs the cost of keeping around a copy of our data and an equality check, but we are sending more data into these publishers than necessary. We shouldn’t need to send extra data into the publisher just so that it can be filtered out by `.removeDuplicates()`. We should be able to stop that process a little earlier. Further, this technique also requires the state we are observing to be `Equatable`, which may not be possible in practice.
 
+
+
 An alternative approach to breaking the infinite cycle is to keep track of when we are in the middle of updating the counter state, and in that case we will short circuit replaying profile changes back to the counter.
 
 We can do this by keeping track of a little mutable boolean that is true during the duration of mutating the `profile` view model:
@@ -648,18 +661,11 @@ We can fix this by observing changes directly on the fields of the observable ob
 
 Now it’s worth mentioning that the techniques we have outlined are just the best we have come up with so far, but there could be better ones out there. We’ve seen some people use singletons for coordinating across many view models, and although that sounds scary it’s certainly worth trying to see if it can be made reasonable. Also, Apple’s WWDC event is happening soon, and so maybe soon we’ll get an official story from Apple on how to handle child view models.
 
-### Next time: the Composable Architecture
+## Reference
+- [@StateObject and @ObservedObject in SwiftUI | Matt Moriarity](https://www.mattmoriarity.com/2020-07-03-stateobject-and-observableobject-in-swiftui/)
+- [https://developer.apple.com/videos/play/wwdc2020/10040/](https://developer.apple.com/videos/play/wwdc2020/10040/)
+- [https://rhonabwy.com/2021/02/13/nested-observable-objects-in-swiftui/](https://rhonabwy.com/2021/02/13/nested-observable-objects-in-swiftui/)
+- [https://twitter.com/Oh_Its_Daniel/status/1277187721304342529](https://twitter.com/Oh_Its_Daniel/status/1277187721304342529)
 
-But until the solution is handed to us from on high, we actually already have a really robust solution to this problem…that is, if you’re using the Composable Architecture.
-
-One of the most fundamental concepts in the Composable Architecture is that of a `Store`. It is the runtime that actually powers your application, and it kinda serves a similar purpose as a view model. It is created with the initial state your application starts in, a reducer that implements your application’s logic, and an environment of dependencies that are needed for your application to do its job.
-
-It is possible, and even encouraged, that your application start with one single store at the root of your application. It will hold your entire application’s state and logic all in one cohesive package. That may sound scary at first, but it also unlocks some wonderful abilities and super powers once your application is built off a single source of truth.
-
-However, having a single root store for the entire application can become quite unwieldy. We certainly don’t want to pass around this gigantic object all over the place to any feature that needs access to state or needs to send user actions. That would give each feature access to everything in the application, even if just needs access to a few small things.
-
-Sounds like we need some kind of operator that allows us to derive child stores from an existing store, just like we attempted to do with view models. Well, luckily for us the Composable Architecture ships with such an operator: `.scope`. Scope is the fundamental operation on `Store` that allows you to transform a store that runs a parent domain’s logic into a store that runs a child domain’s logic. So we can take that gigantic root store and scope it to smaller and smaller domains. For example, we could take the app-level store and scope it down to the home screen store, and then scope that down to the store for the profile screen, and then scope that down to the store for the settings screen.
-
-This is an incredibly important concept for understanding the Composable Architecture, but we feel we haven’t spent enough time on the topic. We introduced the concept of scoping in some of our earliest episodes when we were first uncovering the Composable Architecture, and back then we even called it a different name, but we didn’t really dive deep into it. So, we want to spend a little more time with `.scope` and make sure that everyone knows how to wield it correctly, and along the way we will discover some potential performance problems with scope, and then fix them 😅.
-
-Let’s start by rebuilding the application we just explored, but this time using the Composable Architecture…next time!    
+---
+tags: #swiftui #tca_archtecture 

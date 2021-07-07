@@ -1,9 +1,8 @@
 # Derived Behavior: Composable Architecture
-### Introduction
 
-Apple’s WWDC event is happening soon, and so maybe soon we’ll get an official story from Apple on how to handle child view models.
+## Introduction
+[[Derived BehaviorPart1]]에서 구현했던 예제를 Composable Architecture 를 이용해서 재구현해보자 
 
-But until the solution is handed to us from on high, we actually already have a really robust solution to this problem…that is, if you’re using the Composable Architecture.
 
 One of the most fundamental concepts in the Composable Architecture is that of a `Store`. It is the runtime that actually powers your application, and it kinda serves a similar purpose as a view model. It is created with the initial state your application starts in, a reducer that implements your application’s logic, and an environment of dependencies that are needed for your application to do its job.
 
@@ -11,17 +10,20 @@ It is possible, and even encouraged, that your application start with one single
 
 However, having a single root store for the entire application can become quite unwieldy. We certainly don’t want to pass around this gigantic object all over the place to any feature that needs access to state or needs to send user actions. That would give each feature access to everything in the application, even if just needs access to a few small things.
 
-Sounds like we need some kind of operator that allows us to derive child stores from an existing store, just like we attempted to do with view models. Well, luckily for us the Composable Architecture ships with such an operator: `.scope`. Scope is the fundamental operation on `Store` that allows you to transform a store that runs a parent domain’s logic into a store that runs a child domain’s logic. So we can take that gigantic root store and scope it to smaller and smaller domains. For example, we could take the app-level store and scope it down to the home screen store, and then scope that down to the store for the profile screen, and then scope that down to the store for the settings screen.
+Sounds like we need some kind of operator that allows us to derive child stores from an existing store, just like we attempted to do with view models. 
 
-This is an incredibly important concept for understanding the Composable Architecture, but we feel we haven’t spent enough time on the topic. We introduced the concept of scoping in some of our earliest episodes when we were first uncovering the Composable Architecture, and back then we even called it a different name, but we didn’t really dive deep into it. So, we want to spend a little more time with `.scope` and make sure that everyone knows how to wield it correctly, and along the way we will discover some potential performance problems with scope, and then fix them 😅.
+Well, luckily for us the Composable Architecture ships with such an operator: `.scope`. Scope is the fundamental operation on `Store` that allows you to transform a store that runs a parent domain’s logic into a store that runs a child domain’s logic. 
 
-### Rebuilding in the Composable Architecture
+So we can take that gigantic root store and scope it to smaller and smaller domains. 
+For example, we could take the app-level store and scope it down to the home screen store, and then scope that down to the store for the profile screen, and then scope that down to the store for the settings screen.
 
-Let’s start by rebuilding the application we just explored, but this time using the Composable Architecture. We’ll start out by bringing the [swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture) package into the project.
+This is an incredibly important concept for understanding the Composable Architecture, but we feel we haven’t spent enough time on the topic. 
 
-Our approach will similar to what we did for the vanilla SwiftUI application, where we first start by modeling all of the application state at once, and then later try to break down the domain into smaller pieces.
 
-To build a feature in the Composable Architecture you start with some domain modeling for the state, actions and environment needed to run our application. The state can just hold the current count and set of favorites:
+## Rebuilding in the Composable Architecture
+
+- To build a feature in the Composable Architecture you start with some domain modeling for the state, actions and environment needed to run our application.
+-  The state can just hold the current count and set of favorites:
 
 ```
 struct AppState: Equatable {
