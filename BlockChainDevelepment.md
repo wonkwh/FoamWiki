@@ -11,8 +11,32 @@
 - [cosme12/SimpleCoin](https://github.com/cosme12/SimpleCoin)
     - python 으로 구현된 말그대로 simple coin 단 3개의 파일로 되어있다. 
 
+
+## 이더리움
+### smart contract
+
+### erc721
+- NFT 표준 
+    - 
+
+### ipfs
+- 탈중앙화된 파일 시스템 
+- 파일 업로드시 사용
+
+## Klaytn
+- [Welcome - Klaytn Docs KO](https://ko.docs.klaytn.com/)
+    - 요기에 일단 자세히 나와있음 
+- Token
+    - [Klaytn 호환 토큰 - Klaytn Docs KO](https://ko.docs.klaytn.com/smart-contract/token-standard)
+    - KIP-17 (ERC-721) 
+        - NFT 토큰 
+        - KIP-13(interface query standard) 도 같이 구현해야 함
+        - wallnet interface 를 구현해 지갑어플리케이션 개발 가능
+    - KIP-7(ERC-20)
+
 ## Link
 - Course 
+    - [암호화폐 101 with Nico - YouTube](https://www.youtube.com/playlist?list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq)
     - [블록체인 개발 강의 - 추천순 블록체인 개발 온라인 강의 | 인프런 (inflearn.com)](https://www.inflearn.com/courses/it-programming/dev-blockchain)
         - [[무료] Klaytn 클레이튼 블록체인 어플리케이션 만들기 - 이론과 실습 - 인프런 | 강의 (inflearn.com)](https://www.inflearn.com/course/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8A%BC)
     - [Home - EatTheBlocks](https://eattheblocks.com/)
