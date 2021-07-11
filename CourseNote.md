@@ -16,3 +16,5 @@
    - Chrome plugin 도 있는데 요건 아직 소스를 못찾겠당
 - [insidegui/WWDC: The unofficial WWDC app for macOS (github.com)](https://github.com/insidegui/WWDC)
     - video bookmark, pip 등 활용할만한 것들이 꽤 있당.. 
+ - https://www.notedapp.io/
+	 - 음성녹음 앱인데 UI,Interface 참고할 사항이 있을듯. 
