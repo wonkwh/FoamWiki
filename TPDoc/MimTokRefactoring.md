@@ -109,10 +109,11 @@
 
 
 ## Feature 구현 estimation
-[[mimtokFeature]]
+- [[mimtokFeature]] 
+- [[MimTok source reference]] 
+- [[ReplaceMHBeauryWithARGearSDK]] 
+- [[ReplaceTecentSDK]]
 
-[[MimTok source reference]]
 
-[[ReplaceMHBeauryWithARGearSDK]]
 ----
 - tags: #mimtok

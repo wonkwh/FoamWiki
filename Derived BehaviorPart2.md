@@ -4,7 +4,9 @@
 [[Derived BehaviorPart1]]에서 구현했던 예제를 Composable Architecture 를 이용해서 재구현해보자 
 
 
-One of the most fundamental concepts in the Composable Architecture is that of a `Store`. It is the runtime that actually powers your application, and it kinda serves a similar purpose as a view model. It is created with the initial state your application starts in, a reducer that implements your application’s logic, and an environment of dependencies that are needed for your application to do its job.
+- One of the most fundamental concepts in the Composable Architecture is that of a `Store`. 
+- It is the runtime that actually powers your application, and it kinda serves a similar purpose as a view model. 
+- It is created with the initial state your application starts in, a reducer that implements your application’s logic, and an environment of dependencies that are needed for your application to do its job.
 
 It is possible, and even encouraged, that your application start with one single store at the root of your application. It will hold your entire application’s state and logic all in one cohesive package. That may sound scary at first, but it also unlocks some wonderful abilities and super powers once your application is built off a single source of truth.
 
@@ -25,7 +27,7 @@ This is an incredibly important concept for understanding the Composable Archite
 - To build a feature in the Composable Architecture you start with some domain modeling for the state, actions and environment needed to run our application.
 -  The state can just hold the current count and set of favorites:
 
-```
+```swift
 struct AppState: Equatable {
   var count = 0
   var favorites: Set<Int> = []
@@ -36,7 +38,7 @@ First thing we’ll notice is that we get to use simple value types! We no longe
 
 Next we can model the user actions that can happen in the application. There’s the obvious actions, such as tapping the increment, decrement, save or remove buttons:
 
-```
+```swift
 enum AppAction {
   case incrementButtonTapped
   case decrementButtonTapped
@@ -220,9 +222,10 @@ TabView {
 }
 ```
 
-And we now have a fully functional application. Both tabs work independently, but also they are sharing the favorites state so that changes in one are instantly reflected in the other.
+- And we now have a fully functional application. Both tabs work independently,
+- but also they are sharing the favorites state so that changes in one are instantly reflected in the other.
 
-### Breaking down a large TCA domain
+## Breaking down a large TCA domain
 
 What we’ve done so far doesn’t look too different from the first version of the application we built in vanilla SwiftUI last time. Some code has moved around and we were able to leverage value types instead of references types, but overall the shape looks about the same.
 
@@ -232,7 +235,7 @@ Let’s refactor the application so that the counter and profile views are bette
 
 The counter domain holds the `count` and `favorites`, has most of the actions that we already modeled, and also has an empty environment (for now):
 
-```
+```swift
 struct CounterState: Equatable {
   var count = 0
   var favorites: Set<Int> = []
@@ -248,7 +251,7 @@ struct CounterEnvironment {}
 
 The reducer also looks pretty similar to what we’ve done before. We can even copy and paste a lot of it over:
 
-```
+```swift
 let counterReducer = Reducer<CounterState, CounterAction, CounterEnvironment> { state, action, _ in
   switch action {
   case .incrementButtonTapped:
@@ -269,7 +272,7 @@ let counterReducer = Reducer<CounterState, CounterAction, CounterEnvironment> { 
 
 Now we can update the `TcaCounterView` to hold onto a store of just the specific counter domain, and not all of `AppState` and `AppAction`s:
 
-```
+```swift
 struct TcaCounterView: View {
   let store: Store<CounterState, CounterAction>
 
@@ -282,7 +285,7 @@ This view still compiles because we have everything in the counter domain that t
 
 Let’s do the same for the profile. We can define its domain, which is quite small compared to the full app state:
 
-```
+```swift
 struct ProfileState: Equatable {
   var favorites: Set<Int> = []
 }
@@ -294,7 +297,7 @@ struct ProfileEnvironment {}
 
 And the reducer is simple since it’s only handling one action, which we can even take from from the previous app reducer:
 
-```
+```swift
 let profileReducer = Reducer<ProfileState, ProfileAction, ProfileEnvironment> { state, action, _ in
   switch action {
   case let .removeButtonTapped(number):
@@ -306,7 +309,7 @@ let profileReducer = Reducer<ProfileState, ProfileAction, ProfileEnvironment> { 
 
 Now we can exchange the store that knows about all of app state and actions for one that just understand profile state and actions:
 
-```
+```swift
 struct TcaProfileView: View {
 
   let store: Store<ProfileState, ProfileAction>

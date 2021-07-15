@@ -31,6 +31,7 @@ block = {
 	 - 특히 끝에 typescript로 구현 두개의 프로젝트가 자세한 설명이 나와있다. #typescript
 		 - [Naivecoin: a tutorial for building a cryptocurrency (lhartikk.github.io)](https://lhartikk.github.io/)
 		 - [NaivecoinStake | A tutorial for building a Proof of Stake cryptocurrency (learn.uno)](https://naivecoinstake.learn.uno/)
+		 - [A Practical Introduction to Blockchain with Python // Adil Moujahid // Data Analytics and more](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 		 
 
 ## Crypto Coin
