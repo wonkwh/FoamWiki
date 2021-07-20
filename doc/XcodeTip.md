@@ -34,6 +34,11 @@
       - As was already pointed out, you probably shouldn't run both copies at the same time!
       ```
    
+   - `xcode-select` 로 xcode-beta 를 선택하자 
+        > xcode-select -p //현재 설정되어 있는 xcode 확인
+        > sudo xcode-select -s /Applications/[Your xcode].app/Contents/Developer
+    - 위와 같이 설정하면 `xed` 로 console 에서 선택시 해당 xcode를 open할수 있다. 
+        
 ## Reference
 - [Supercharging Your Xcode Efficiency | raywenderlich.com](https://www.raywenderlich.com/2325-supercharging-your-xcode-efficiency)
    - Some Behavior Recommendations 참조해서 setting 변경

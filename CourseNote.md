@@ -4,7 +4,7 @@
 - youtube video 를 캡쳐해서 image 포함된 markdown note 로 생성한다. 
 
 ## implement
--
+- [[ThreeColumnNavigation]]
 - extra
 
 ## reference 
@@ -22,3 +22,4 @@
      - 웹사이트를 앱으로 바꿔주는 앱인데 xcode 없이 개발하는 방법이 신선하다. webkit 을 맥에서 쓰는 방법도 함 살펴조면 좋을듯 #macDev 
  - [Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor. (github.com)](https://github.com/saul-mirone/milkdown/)
      - 상당히 쓸만한 react markdown editor , #notion 과 유사하다 이걸그냥 위 multi를 이용해서 mac app과 통신하는 방법으로?? native mac app은 아니긴 한데... 흠.. 고민해보장
+ - [onmyway133/GifCapture: 🏇 Gif capture app for macOS (github.com)](https://github.com/onmyway133/GifCapture)
